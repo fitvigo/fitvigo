@@ -1,0 +1,10 @@
+include ../logo/logo
+include ../nav/nav
+
+mixin header()
+	+b.header&attributes(attributes)
+		+e.wrapper
+			+e.logo
+				+logo
+			+e.nav
+				+nav

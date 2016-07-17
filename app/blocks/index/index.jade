@@ -1,0 +1,12 @@
+include ../header/header
+include ../section/section
+include ../intro/intro
+
+mixin index()
+	+b.index
+		+header()
+		+e.sections#fullpage
+			+section.__fake-screen-1
+			+section.__fake-screen-2
+			+section.__intro
+				+intro
