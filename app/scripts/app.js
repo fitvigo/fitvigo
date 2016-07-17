@@ -5,7 +5,7 @@ import 'fullpage.js';
 $(() => {
 	svg4everybody();
 
-	const anchors = ['intro', 'exchange', 'create', 'investments', 'account', 'trade', 'footer'];
+	const anchors = ['intro', 'vigo', 'about', 'investments', 'account', 'trade', 'footer'];
 
 	$('#fullpage').fullpage({
 		scrollbar: false,
