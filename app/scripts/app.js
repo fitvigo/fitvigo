@@ -11,6 +11,7 @@ $(() => {
 		scrollbar: false,
 		navigation: true,
 		navigationPosition: 'index__fullpage-nav',
+		css3: false,
 		anchors
 	});
 });

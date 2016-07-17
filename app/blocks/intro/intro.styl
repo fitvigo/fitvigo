@@ -1,7 +1,46 @@
 .intro
 	position fixed
 	left 50%
-	top 0
+	top 75px
 	width 1040px
-	height 100%
+	bottom 0
 	margin-left -520px
+	
+	&__phone
+		position absolute
+		left 70px
+		transform translate(0, -50%)
+		top 50%
+		width 302px
+		height 80vh
+		background url(../images/phone.png) center no-repeat
+		background-size contain
+		transition linear .7s opacity
+		
+		.fp-viewing-exchange &
+		.fp-viewing-create &
+			opacity 0
+		
+	&__ball
+		position absolute
+		width 302px
+		left 70px
+		top 50%
+		text-align center
+		transform translate(0, -90%)
+		transition linear .7s all
+		
+		.fp-viewing-exchange &
+		.fp-viewing-create &
+			left 50%
+			transform translate(-50%, -50%)
+		
+	&__ball-image
+		width 150px
+		height 160px
+		transition linear .7s all
+		
+		.fp-viewing-exchange &
+		.fp-viewing-create &
+			width 350px
+			height 350px
