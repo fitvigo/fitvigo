@@ -1,17 +1,23 @@
 import svg4everybody from 'svg4everybody';
 import $ from 'jquery';
 import 'fullpage.js';
+import track from '../blocks/track/';
 
 $(() => {
 	svg4everybody();
 
-	const anchors = ['intro', 'vigo', 'about', 'investments', 'account', 'trade', 'footer'];
+	const anchors = ['intro', 'vigo', 'about', 'track', 'track-details', 'trade', 'footer'];
+	const scrollingSpeed = 1000;
 
 	$('#fullpage').fullpage({
 		scrollbar: false,
 		navigation: true,
 		navigationPosition: 'index__fullpage-nav',
 		css3: false,
-		anchors
+		scrollingSpeed,
+		anchors,
+		onLeave: (index, nextIndex, direction) => {
+			track(direction, index, scrollingSpeed);
+		}
 	});
 });

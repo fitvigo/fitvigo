@@ -1,3 +1,6 @@
+long-animation = ease-out 1s all
+short-animation = ease-out .5s all
+
 .intro
 	position fixed
 	left 50%
@@ -5,7 +8,7 @@
 	bottom 100%
 	width 1040px
 	margin-left -520px
-	transition linear .7s all
+	transition long-animation
 	
 	.fp-viewing-{slide1} &
 	.fp-viewing-{slide2} &
@@ -23,7 +26,7 @@
 		height 80vh
 		background url(../images/phone.png) center no-repeat
 		background-size contain
-		transition linear .3s all
+		transition short-animation
 		
 		.fp-viewing-{slide1} &
 			opacity 1
@@ -33,6 +36,7 @@
 		margin-bottom 10px
 		
 	&__header
+		font-family proxima_th
 		font-size 60px
 		line-height 70px
 		margin-bottom 20px
@@ -46,7 +50,7 @@
 		transform translate(0, -50%)
 		font-size 20px
 		line-height 23px
-		transition linear .3s all
+		transition short-animation
 		
 		.fp-viewing-{slide1} &
 			opacity 1
@@ -59,7 +63,7 @@
 		opacity 0
 		text-align center
 		bottom -50px
-		transition linear .3s all
+		transition short-animation
 		
 		.fp-viewing-{slide2} &
 		.fp-viewing-{slide3} &
@@ -74,7 +78,7 @@
 		text-align center
 		line-height 23px
 		bottom -50px
-		transition linear .3s all
+		transition short-animation
 		
 		.fp-viewing-{slide2} &
 			bottom 60px
@@ -92,7 +96,7 @@
 		text-align center
 		line-height 23px
 		bottom 60px
-		transition linear .3s all
+		transition short-animation
 			
 		.fp-viewing-{slide3} &
 			opacity 1
@@ -103,8 +107,8 @@
 		text-align center
 		top 40%
 		left 50%
-		transition linear .7s all
-		transform translate(-50%, -50%)
+		transition long-animation
+		transform translate(-65%, -50%)
 		
 		.fp-viewing-{slide1} &
 			transform translate(0, -90%)
@@ -114,7 +118,7 @@
 	&__ball-image
 		width 350px
 		height 350px
-		transition linear .7s all
+		transition long-animation
 		
 		.fp-viewing-{slide1} &
 			width 150px

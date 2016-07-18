@@ -1,0 +1,71 @@
+long-animation = ease-out 1s all
+short-animation = ease-out .5s all
+
+.track
+	position fixed
+	left 50%
+	top -100%
+	bottom 100%
+	width 1040px
+	margin-left -520px
+	transition long-animation
+	
+	.fp-viewing-{slide1} &
+	.fp-viewing-{slide2} &
+	.fp-viewing-{slide3} &
+		top 100%
+		bottom -100%
+	
+	.fp-viewing-{slide4} &
+	.fp-viewing-{slide5} &
+		top 75px
+		bottom 0
+		
+	&__heading
+		margin-top 30px
+		
+	&__header
+		text-align center
+		font-family proxima_th
+		font-size 60px
+		line-height 70px
+		margin-bottom 20px
+		
+	&__text
+		font-size 20px
+		line-height 23px
+		text-align center
+		
+	&__bg
+		position relative
+		margin 50px auto 35px
+		width 988px
+		height 40vh
+		background url('../images/track_bg.png')
+		
+	&__data
+		position absolute
+		left 0
+		width 0
+		top 50%
+		height 204px
+		transform translate(0, -50%)
+		background url('../images/track_data.png') left center no-repeat
+		transition long-animation
+		
+		&_visible
+			width 100%
+		
+	&__mark
+		position absolute
+		left 0
+		right 0
+		top 50%
+		height 0
+		transform translate(0, -50%)
+		background #848cf9
+		opacity 0.15
+		transition short-animation
+		
+		.fp-viewing-{slide5} &
+			height 135px
