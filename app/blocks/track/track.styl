@@ -54,6 +54,8 @@ short-animation = ease-out .5s all
 		background url('../images/track_data.png') left center no-repeat
 		transition long-animation
 		
+		.fp-viewing-{slide5} &
+		.fp-viewing-{slide6} &
 		&_visible
 			width 100%
 		
@@ -71,3 +73,38 @@ short-animation = ease-out .5s all
 		.fp-viewing-{slide5} &
 		.fp-viewing-{slide6} &
 			height 135px
+			
+	&__products
+		position absolute
+		left 0
+		top 0
+		width 100%
+		height 100%
+		background #fff
+		opacity 0
+		transition short-animation
+		font-size 0
+		text-align center
+		
+		.fp-viewing-{slide6} &
+		.fp-viewing-{slide7} &
+			opacity 1
+		
+	&__product
+		display inline-block
+		width 33%
+		text-align center
+		position relative
+		top 70px
+		
+		&_item-1
+			transition ease-out .4s top
+			
+		&_item-2
+			transition ease-out .6s top
+			
+		&_item-3
+			transition ease-out .8s top
+			
+		.fp-viewing-{slide6} &
+			top 40px
