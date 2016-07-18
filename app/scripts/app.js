@@ -6,7 +6,16 @@ import track from '../blocks/track/';
 $(() => {
 	svg4everybody();
 
-	const anchors = ['intro', 'vigo', 'about', 'track', 'track-details', 'trade', 'footer'];
+	const anchors = [
+		'intro',
+		'vigo',
+		'about',
+		'track',
+		'track-details',
+		'track-products',
+		'habits'
+	];
+
 	const scrollingSpeed = 1000;
 
 	$('#fullpage').fullpage({
