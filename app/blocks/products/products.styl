@@ -1,2 +1,63 @@
 .products
 	display block
+
+	&__header
+		padding-top 100px
+		margin-bottom 40px
+		font-family proxima_th
+		font-size 60px
+		line-height 70px
+		text-align center
+		
+	&__list
+		font-size 0
+		text-align center
+		
+	&__item
+		display inline-block
+		vertical-align top
+		width 280px
+		margin 0 50px
+		
+	&__image
+		height 230px
+		
+	&__title
+		margin-bottom 10px
+		font-family proxima_li
+		font-size 32px
+		line-height 39px
+		text-align left
+		
+	&__desc
+		margin-bottom 10px
+		font-family proxima_li
+		font-size 20px
+		line-height 24px
+		text-align left
+	
+	&__items
+		text-align left
+
+	&__link
+		position relative
+		margin-right 20px
+		display inline-block
+		color #7e9fc0
+		text-decoration none
+		font-family proxima_li
+		font-size 16px
+		line-height 20px
+		
+		&:after
+			position absolute
+			top 7px
+			right -12px
+			width 4px
+			height 4px
+			border-radius 100%
+			background #aaa
+			content ''
+			
+		&:last-child:after
+			display none
