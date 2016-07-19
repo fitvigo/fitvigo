@@ -1,0 +1,11 @@
+include ../icon/icon
+
+mixin habits()
+	+b.habits
+		+e.wraper
+			+e.title Habits
+			+e.desc Vigo is accomplished by suggesting healthier habits, simple tasks you can easily integrate into your everyday life.
+
+			+e.features
+				each item in ['heart', 'leaf', 'moon', 'step', 'sun', 'energy', 'apple', 'cardio']
+					+icon(item).icon
