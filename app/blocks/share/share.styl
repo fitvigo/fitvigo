@@ -1,0 +1,64 @@
+long-animation = ease-out 1s all
+short-animation = ease-out .5s all
+
+.share
+	display block
+	height 100%
+	background url(../images/share_bg.jpg) center 70px no-repeat
+	background-size cover
+	
+	&__header
+		padding-top 140px
+		margin-bottom 20px
+		font-family proxima_th
+		font-size 60px
+		line-height 70px
+		text-align center
+		color #fff
+		
+	&__text
+		width 640px
+		margin 0 auto
+		color #fff
+		font-size 20px
+		line-height 32px
+		text-align center
+		
+	&__icons
+		position relative
+		margin 25px auto 0
+		width 403px
+		height 122px
+		background url(../images/share_icons.png)
+		
+		&_visible
+			& .share__icon
+				width 48px
+				height 48px
+		
+	&__icon
+		width 0px
+		height 0px
+		position absolute
+		bottom 34px
+		background-position center
+		background-repeat no-repeat
+		background-size contain
+		transition short-animation
+		transform translate(-50%, 50%)
+		
+		&_gmail
+			left 24px
+			background-image url(../images/logo_gmail.png)
+			
+		&_wechat
+			left 158px
+			background-image url(../images/logo_wechat.png)
+			
+		&_whatsapp
+			left 242px
+			background-image url(../images/logo_whatsapp.png)
+		
+		&_fb
+			left 392px
+			background-image url(../images/logo_fb.png)

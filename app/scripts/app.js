@@ -2,6 +2,7 @@ import svg4everybody from 'svg4everybody';
 import $ from 'jquery';
 import 'fullpage.js';
 import track from '../blocks/track/';
+import share from '../blocks/share/';
 
 $(() => {
 	svg4everybody();
@@ -13,7 +14,10 @@ $(() => {
 		'track',
 		'track-details',
 		'track-products',
-		'habits'
+		'habits',
+		'protection',
+		'share',
+		'products'
 	];
 
 	const scrollingSpeed = 1000;
@@ -27,6 +31,7 @@ $(() => {
 		anchors,
 		onLeave: (index, nextIndex, direction) => {
 			track(direction, index, scrollingSpeed);
+			share(direction, index, scrollingSpeed);
 		}
 	});
 });

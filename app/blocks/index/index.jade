@@ -2,6 +2,9 @@ include ../header/header
 include ../section/section
 include ../intro/intro
 include ../track/track
+include ../protection/protection
+include ../share/share
+include ../products/products
 
 mixin index()
 	+b.index
@@ -17,3 +20,12 @@ mixin index()
 				+track
 				
 			+section.__habits
+
+			+section.__protection
+				+protection
+
+			+section.__share
+				+share
+
+			+section.__products
+				+products
