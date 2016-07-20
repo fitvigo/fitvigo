@@ -11,6 +11,8 @@ export default function (direction, index, speed) {
 	}
 
 	if (direction === 'up' && index === 9) {
-		$('.' + classname).removeClass(classname + '_visible');
+		setTimeout(() => {
+			$('.' + classname).removeClass(classname + '_visible');
+		}, speed);
 	}
 }

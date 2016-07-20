@@ -63,16 +63,15 @@ short-animation = ease-out .5s all
 		position absolute
 		left 0
 		right 0
-		top 50%
+		bottom 20%
 		height 0
-		transform translate(0, -50%)
 		background #848cf9
 		opacity 0.15
 		transition short-animation
 		
 		.fp-viewing-{slide5} &
 		.fp-viewing-{slide6} &
-			height 135px
+			height 60%
 			
 	&__products
 		position absolute
@@ -88,23 +87,28 @@ short-animation = ease-out .5s all
 		
 		.fp-viewing-{slide6} &
 		.fp-viewing-{slide7} &
-			opacity 1
+			opacity .95
 		
 	&__product
 		display inline-block
 		width 33%
 		text-align center
 		position relative
-		top 70px
-		
-		&_item-1
-			transition ease-out .4s top
+		top 120px
+		transition ease-out .6s all
+		opacity 0
 			
-		&_item-2
-			transition ease-out .6s top
-			
-		&_item-3
-			transition ease-out .8s top
-			
-		.fp-viewing-{slide6} &
+		&_visible
 			top 40px
+			opacity 1
+			
+	&__desc
+		right 0
+		bottom 30px
+		left 0
+		text-align center
+		
+	&__paragraph
+		font-size 20px
+		line-height 24px
+		margin-bottom 10px

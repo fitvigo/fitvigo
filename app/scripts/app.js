@@ -3,6 +3,7 @@ import $ from 'jquery';
 import 'fullpage.js';
 import track from '../blocks/track/';
 import share from '../blocks/share/';
+import protection from '../blocks/protection/';
 
 $(() => {
 	svg4everybody();
@@ -32,6 +33,12 @@ $(() => {
 		onLeave: (index, nextIndex, direction) => {
 			track(direction, index, scrollingSpeed);
 			share(direction, index, scrollingSpeed);
+			protection(direction, index, scrollingSpeed);
 		}
+	});
+
+	$('.js-scroll-down').click(event => {
+		event.preventDefault();
+		$.fn.fullpage.moveSectionDown();
 	});
 });
