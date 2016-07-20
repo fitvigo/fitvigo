@@ -20,7 +20,7 @@ export default function (direction, index, speed) {
 			}, delay);
 			delay += delayInc;
 		});
-	} 
+	}
 
 	if (direction === 'up' && index === 6) {
 		$('.' + product).removeClass(product + '_visible');
