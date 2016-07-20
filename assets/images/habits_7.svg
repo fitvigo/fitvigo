@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="80" width="80" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+    <path fill="#b7e923" fill-rule="evenodd" d="M 0 40 C 0 17.91 17.9 0 40 0 L 40 0 C 62.09 0 80 17.9 80 40 L 80 40 C 80 62.09 62.1 80 40 80 L 40 80 C 17.91 80 0 62.1 0 40 L 0 40 Z M 0 40" />
+    <path stroke-linejoin="miter" stroke-linecap="round" stroke-width="2.727272727272727" stroke="#ffffff" fill="none" fill-rule="evenodd" d="M 5 40 C 5 20.67 20.67 5 40 5 L 40 5 C 59.33 5 75 20.67 75 40 L 75 40 C 75 59.33 59.33 75 40 75 L 40 75 C 20.67 75 5 59.33 5 40 L 5 40 Z M 5 40" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" fill="none" fill-rule="evenodd" d="M 39.82 29.27 C 39.82 29.27 37.92 21.9 44.82 22.81" />
+    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" fill="none" fill-rule="evenodd" d="M 45.8 53.74 C 46.6 53.74 50.29 53.13 52.2 47.84 C 54.11 42.54 54.77 37.34 51.18 32.43 C 47.58 27.52 40.4 30.36 40.4 30.36 L 39.66 30.36 C 39.66 30.36 32.48 27.52 28.89 32.43 C 25.29 37.34 26.38 42.54 28.29 47.84 C 30.2 53.13 33.46 53.74 34.26 53.74 C 35.6 53.74 38.1 52.84 40 52.84 C 41.96 52.84 44.46 53.74 45.8 53.74 Z M 45.8 53.74" />
+</svg>
