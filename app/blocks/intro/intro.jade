@@ -1,6 +1,5 @@
 mixin intro()
 	+b.intro&attributes(attributes)
-		+e.phone
 		+e.text-1
 			+e('h1').header Fitvigo
 			+e('p').paragraph Synth polaroid bitters chillwave pickled
@@ -16,8 +15,9 @@ mixin intro()
 		+e.text-3
 			| I´m a representation of your collected data, helping you to be more active<br>in everyday life and therefore to feel fitter and better.
 
-		+e.ball
-			+e('img')(src='assets/images/blue_blur.png').ball-image
+		+e.phone
+			+e.ball
+				+e('img')(src='assets/images/blue_blur.png').ball-image
 
 		+e.scroll-down.js-scroll-down
 			+e.jumper
