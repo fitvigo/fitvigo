@@ -18,7 +18,7 @@ class Habits {
 		};
 
 		$(this.selectors.habit).on('click', this.selectHabit.bind(this));
-		$(document.body).click(this.resetHabit.bind(this))
+		$(document.body).click(this.resetHabit.bind(this));
 	}
 
 	resetHabit() {
@@ -26,9 +26,9 @@ class Habits {
 			.removeClass(this.classes.habitActive)
 			.removeClass(this.classes.habitInactive);
 
-		$(this.selectors.text).removeClass(this.classes.textActive)
-		$(this.selectors.text).eq(0).addClass(this.classes.textActive)
-		$(this.selectors.desc).removeClass(this.classes.descActive)
+		$(this.selectors.text).removeClass(this.classes.textActive);
+		$(this.selectors.text).eq(0).addClass(this.classes.textActive);
+		$(this.selectors.desc).removeClass(this.classes.descActive);
 		$(this.selectors.whiteScreen).removeClass(this.classes.whiteScreenVisible);
 	}
 
@@ -45,8 +45,8 @@ class Habits {
 			.removeClass(this.classes.habitInactive)
 			.addClass(this.classes.habitActive);
 
-		$(this.selectors.text).removeClass(this.classes.textActive)
-		$(this.selectors.desc).removeClass(this.classes.descActive)
+		$(this.selectors.text).removeClass(this.classes.textActive);
+		$(this.selectors.desc).removeClass(this.classes.descActive);
 		const currentText = '.habits__text_h' + habit;
 		const currentDesc = '.habits__habit-desc_h' + habit;
 		$(currentText).addClass(this.classes.textActive);

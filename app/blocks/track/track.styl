@@ -103,14 +103,26 @@ short-animation = ease-out .5s all
 			opacity 1
 
 	&__desc
+		position absolute
 		right 0
 		bottom 30px
 		left 0
 		text-align center
+		opacity 0
+		transition ease-out .5s all
 
-		&_second,
-		&_third
-			display none
+		.fp-viewing-{slide4} &
+			&_first
+				opacity 1
+				
+		.fp-viewing-{slide5} &
+			&_second
+				opacity 1
+				
+		.fp-viewing-{slide6} &
+			&_third
+				opacity 1
+			
 
 	&__paragraph
 		font-size 20px
