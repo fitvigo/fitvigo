@@ -4,10 +4,10 @@ short-animation = ease-out .5s all
 @keyframes jump
   0%
   	top 0
-  	
+
   50%
   	top 20px
-  
+
   100%
   	top 0
 
@@ -19,13 +19,13 @@ short-animation = ease-out .5s all
 	width 1040px
 	margin-left -520px
 	transition long-animation
-	
+
 	.fp-viewing-{slide1} &
 	.fp-viewing-{slide2} &
 	.fp-viewing-{slide3} &
 		top 75px
 		bottom 0
-	
+
 	&__phone
 		position absolute
 		left 70px
@@ -37,20 +37,20 @@ short-animation = ease-out .5s all
 		background url(../images/phone.png) center no-repeat
 		background-size contain
 		transition short-animation
-		
+
 		.fp-viewing-{slide1} &
 			opacity 1
 			top 50%
-			
+
 	&__paragraph
 		margin-bottom 10px
-		
+
 	&__header
 		font-family proxima_th
 		font-size 60px
 		line-height 70px
 		margin-bottom 20px
-			
+
 	&__text-1
 		position absolute
 		left 500px
@@ -61,11 +61,11 @@ short-animation = ease-out .5s all
 		font-size 20px
 		line-height 23px
 		transition short-animation
-		
+
 		.fp-viewing-{slide1} &
 			opacity 1
 			top 50%
-			
+
 	&__header-2
 		position absolute
 		left 0
@@ -74,12 +74,12 @@ short-animation = ease-out .5s all
 		text-align center
 		bottom -50px
 		transition short-animation
-		
+
 		.fp-viewing-{slide2} &
 		.fp-viewing-{slide3} &
 			bottom 100px
 			opacity 1
-			
+
 	&__text-2
 		position absolute
 		left 0
@@ -89,15 +89,15 @@ short-animation = ease-out .5s all
 		line-height 23px
 		bottom -50px
 		transition short-animation
-		
+
 		.fp-viewing-{slide2} &
 			bottom 60px
 			opacity 1
-			
+
 		.fp-viewing-{slide3} &
 			bottom 60px
 			opacity 0
-			
+
 	&__text-3
 		position absolute
 		left 0
@@ -107,34 +107,34 @@ short-animation = ease-out .5s all
 		line-height 23px
 		bottom 60px
 		transition short-animation
-			
+
 		.fp-viewing-{slide3} &
 			opacity 1
-		
+
 	&__ball
 		position absolute
 		width 550px
-		padding-top 0
 		text-align center
-		top -70px
-		left 240px
+		top 50%
+		margin-top -350px
+		left 240px 
 		transition long-animation
-		
+
 		.fp-viewing-{slide1} &
-			padding-top 70px
+			margin-top 0px
 			width 302px
 			left 70px
-			top 10%
-		
+			top 25%
+
 	&__ball-image
 		width 550px
 		height 550px
 		transition long-animation
-		
+
 		.fp-viewing-{slide1} &
 			width 150px
 			height 160px
-			
+
 	&__scroll-down
 		width 100px
 		text-align center
@@ -148,11 +148,11 @@ short-animation = ease-out .5s all
 		font-size 16px
 		transform translate(0, -50%)
 		transition short-animation
-		
+
 		.fp-viewing-{slide1} &
 			opacity 1
 			bottom 10px
-		
+
 	&__jumper
 		position absolute
 		top 0
@@ -160,7 +160,8 @@ short-animation = ease-out .5s all
 		width 24px
 		height 24px
 		border-radius 100%
-		background #7e9fc0
+		background-color #9ac9ff
+		opacity .5
 		content ''
 		animation jump .5s infinite
 		animation-timing-function ease-out
