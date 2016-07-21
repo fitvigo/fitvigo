@@ -9,41 +9,41 @@ short-animation = ease-out .5s all
 	width 1040px
 	margin-left -520px
 	transition long-animation
-	
+
 	.fp-viewing-{slide1} &
 	.fp-viewing-{slide2} &
 	.fp-viewing-{slide3} &
 		top 100%
 		bottom -100%
-	
+
 	.fp-viewing-{slide4} &
 	.fp-viewing-{slide5} &
 	.fp-viewing-{slide6} &
 		top 75px
 		bottom 0
-		
+
 	&__heading
 		margin-top 30px
-		
+
 	&__header
 		text-align center
 		font-family proxima_th
 		font-size 60px
 		line-height 70px
 		margin-bottom 20px
-		
+
 	&__text
 		font-size 20px
 		line-height 23px
 		text-align center
-		
+
 	&__bg
 		position relative
 		margin 50px auto 35px
 		width 988px
 		height 40vh
 		background url('../images/track_bg.png')
-		
+
 	&__data
 		position absolute
 		left 0
@@ -53,12 +53,12 @@ short-animation = ease-out .5s all
 		transform translate(0, -50%)
 		background url('../images/track_data.png') left center no-repeat
 		transition long-animation
-		
+
 		.fp-viewing-{slide5} &
 		.fp-viewing-{slide6} &
 		&_visible
 			width 100%
-		
+
 	&__mark
 		position absolute
 		left 0
@@ -68,11 +68,11 @@ short-animation = ease-out .5s all
 		background #848cf9
 		opacity 0.15
 		transition short-animation
-		
+
 		.fp-viewing-{slide5} &
 		.fp-viewing-{slide6} &
 			height 60%
-			
+
 	&__products
 		position absolute
 		left 0
@@ -84,11 +84,11 @@ short-animation = ease-out .5s all
 		transition short-animation
 		font-size 0
 		text-align center
-		
+
 		.fp-viewing-{slide6} &
 		.fp-viewing-{slide7} &
 			opacity .95
-		
+
 	&__product
 		display inline-block
 		width 33%
@@ -97,17 +97,21 @@ short-animation = ease-out .5s all
 		top 120px
 		transition ease-out .6s all
 		opacity 0
-			
+
 		&_visible
 			top 40px
 			opacity 1
-			
+
 	&__desc
 		right 0
 		bottom 30px
 		left 0
 		text-align center
-		
+
+		&_second,
+		&_third
+			display none
+
 	&__paragraph
 		font-size 20px
 		line-height 24px
