@@ -3,23 +3,68 @@ include ../icon/icon
 mixin habits()
 	+b.habits
 		+e.wraper
+			
+			+e.white-screen.js-white-screen
 			+e.title Habits
-			+e.desc Vigo is accomplished by suggesting healthier habits, simple tasks you can easily integrate into your everyday life.
+			+e.desc
+				+e.text._active Vigo is accomplished by suggesting healthier habits, simple tasks you can easily integrate into your everyday life.
+				+e.text._h1 Simple tasks you can easily integrate into your everyday life.
+				+e.text._h2 Simple tasks you can easily integrate into your everyday life.
+				+e.text._h3 Habits, simple tasks you can easily integrate into your everyday life.
+				+e.text._h4 Simple tasks you can easily integrate into your everyday life.
+				+e.text._h5 Simple tasks you can easily integrate into your every6ay life.
+				+e.text._h6 Habits, simple tasks you can easily integrate into your everyday life.
+				+e.text._h7 Simple tasks you can easily integrate into your every6ay life.
+				+e.text._h8 Habits, simple tasks you can easily integrate into your everyday life.
+
 
 			+e.features
-				+e.habit._h1
+				+e.habit._h1(data-habit='1')
 					+icon('habits_1').icon
-				+e.habit._h2
+				+e.habit._h2(data-habit='2')
 					+icon('habits_2').icon
-				+e.habit._h3
+				+e.habit._h3(data-habit='3')
 					+icon('habits_3').icon
-				+e.habit._h4
+				+e.habit._h4(data-habit='4')
 					+icon('habits_4').icon
-				+e.habit._h5
+				+e.habit._h5(data-habit='5')
 					+icon('habits_5').icon
-				+e.habit._h6
+				+e.habit._h6(data-habit='6')
 					+icon('habits_6').icon
-				+e.habit._h7
+				+e.habit._h7(data-habit='7')
 					+icon('habits_7').icon
-				+e.habit._h8
+				+e.habit._h8(data-habit='8')
 					+icon('habits_8').icon
+
+			+e.habits-desc
+				+e.habit-desc._h1
+					+e.habit-title No mails — pay a visit!
+					| 1 week task
+
+				+e.habit-desc._h2
+					+e.habit-title No mails — pay a visit!
+					| 2 week task
+
+				+e.habit-desc._h3
+					+e.habit-title No mails — pay a visit!
+					| 3 week task
+
+				+e.habit-desc._h4
+					+e.habit-title No mails — pay a visit!
+					| 4 week task
+
+				+e.habit-desc._h5
+					+e.habit-title No mails — pay a visit!
+					| 5 week task
+
+				+e.habit-desc._h6
+					+e.habit-title No mails — pay a visit!
+					| 6 week task
+
+				+e.habit-desc._h7
+					+e.habit-title No mails — pay a visit!
+					| 7 week task
+
+				+e.habit-desc._h8
+					+e.habit-title No mails — pay a visit!
+					| 8 week task

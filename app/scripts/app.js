@@ -4,9 +4,12 @@ import 'fullpage.js';
 import track from '../blocks/track/';
 import share from '../blocks/share/';
 import protection from '../blocks/protection/';
+import Habits from '../blocks/habits/';
 
 $(() => {
 	svg4everybody();
+
+	const habits = new Habits();
 
 	const anchors = [
 		'intro',

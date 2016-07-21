@@ -5,6 +5,8 @@
 	background-position 50% 100%
 
 	&__title
+		position relative
+		z-index 7
 		padding-top 217px
 		text-align center
 		color black
@@ -13,6 +15,7 @@
 		font-family proxima_th
 
 	&__desc
+		position relative
 		margin 0 auto
 		width 640px
 		padding-top 20px
@@ -33,29 +36,93 @@
 
 	&__icon
 		width 80px
+		transition ease-out .4s all
+		
+	&__text
+		position absolute
+		left 0
+		right 0
+		top 0
+		opacity 0
+		text-align center
+		transition ease-out .4s opacity
+		
+		&_active
+			opacity 1
 
-&__habit
-	position absolute
-	top 0
-	left 0
-	
-	&_h2
-		left 96px
+	&__habit
+		cursor pointer
+		position absolute
+		top 50px
+		left 0
+		transition ease-out .4s all
 		
-	&_h3
-		left 192px
+		&_h2
+			left 96px
+			
+		&_h3
+			left 192px
+			
+		&_h4
+			left 288px
+			
+		&_h5
+			left 384px
+			
+		&_h6
+			left 480px
+			
+		&_h7
+			left 576px
+			
+		&_h8
+			left 672px
+			
+		&_inactive
+			opacity .4
+			
+		&_active
+			top 30px
+			left 50%
+			z-index 10
+			margin-left -60px
+			
+			.habits__icon
+				width 120px
+
+	&__habits-desc
+		position relative
+		text-align center
+		margin-top 160px
 		
-	&_h4
-		left 288px
+	&__habit-title
+		font-family proxima_th
+		font-size 30px
+		margin-bottom 20px
+		color #7e9fc0
 		
-	&_h5
-		left 384px
+	&__habit-desc
+		position absolute
+		top 0
+		left 0
+		right 0
+		font-size 18px
+		color #333
+		opacity 0
+		transition ease-out .4s opacity
 		
-	&_h6
-		left 480px
+		&_active
+			opacity 1
+			
+	&__white-screen
+		position absolute
+		left 0
+		top 0
+		width 100%
+		height 100%
+		background rgba(255, 255, 255, .6)
+		opacity 0
+		transition ease-out .4s opacity
 		
-	&_h7
-		left 576px
-		
-	&_h8
-		left 672px
+		&_visible
+			opacity 1

@@ -12,7 +12,7 @@ export default function (direction, index, speed) {
 	}
 
 	if ((direction === 'down' && index === 5) || index === 6 || index === 7) {
-		const delayInc = 300;
+		const delayInc = 400;
 		let delay = delayInc;
 		$('.' + product).each((i, item) => {
 			setTimeout(() => {
