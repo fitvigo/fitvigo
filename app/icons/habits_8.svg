@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
-<svg height="80" width="80" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
-    <path fill="#ff7362" fill-rule="evenodd" d="M 0 40 C 0 17.91 17.9 0 40 0 L 40 0 C 62.09 0 80 17.9 80 40 L 80 40 C 80 62.09 62.1 80 40 80 L 40 80 C 17.91 80 0 62.1 0 40 L 0 40 Z M 0 40" />
-    <path stroke-linejoin="miter" stroke-linecap="round" stroke-dasharray="168.8507269236667,853.3806666854982" stroke-width="2.727272727272727" stroke="#ffffff" fill="none" fill-rule="evenodd" d="M 5 40 C 5 20.67 20.67 5 40 5 L 40 5 C 59.33 5 75 20.67 75 40 L 75 40 C 75 59.33 59.33 75 40 75 L 40 75 C 20.67 75 5 59.33 5 40 L 5 40 Z M 5 40" />
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" fill="none" fill-rule="evenodd" d="M 25 39.54 L 31.28 39.54 L 38.08 30 L 43.22 50.56 L 47.91 40.55 L 54.19 40.55" />
-</svg>
+<svg height="80" width="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><path fill="#ff7362" fill-rule="evenodd" d="M0 40c0-22.09 17.9-40 40-40 22.09 0 40 17.9 40 40 0 22.09-17.9 40-40 40-22.09 0-40-17.9-40-40zm0 0"/><path stroke-linecap="round" stroke-dasharray="168.8507269236667,853.3806666854982" stroke-width="3" stroke="#fff" d="M5 40c0-19.33 15.67-35 35-35s35 15.67 35 35-15.67 35-35 35-35-15.67-35-35zm0 0" fill="none"/><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#fff" d="M25 39.54h6.28l6.8-9.54 5.14 20.56 4.69-10.01h6.28" fill="none"/></svg>

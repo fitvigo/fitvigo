@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
-<svg height="122" width="122" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122 122">
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#9ac9ff" fill="none" fill-rule="evenodd" d="M 61 121 C 94.14 121 121 94.14 121 61 C 121 27.86 94.14 1 61 1 C 27.86 1 1 27.86 1 61 C 1 94.14 27.86 121 61 121 Z M 61 121" />
-    <path fill="#ffffff" fill-rule="evenodd" d="M 72.64 53.45 L 79.64 53.45 L 79.64 79.45 L 72.64 79.45 L 72.64 53.45 Z M 72.64 53.45" />
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#9ac9ff" fill="none" fill-rule="evenodd" d="M 83.36 87.63 L 83.36 52.82 L 38.64 52.82 L 38.64 87.63 C 38.64 89.49 40.14 91 41.99 91 L 80.01 91 C 81.86 91 83.36 89.49 83.36 87.63 L 83.36 87.63 Z M 83.36 87.63" />
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#9ac9ff" fill="none" fill-rule="evenodd" d="M 63.18 68.64 C 63.18 69.84 62.2 70.82 61 70.82 C 59.8 70.82 58.82 69.84 58.82 68.64 C 58.82 67.43 59.8 66.45 61 66.45 C 62.2 66.45 63.18 67.43 63.18 68.64 L 63.18 68.64 Z M 63.18 68.64" />
-    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#9ac9ff" fill="none" fill-rule="evenodd" d="M 61 72.45 L 61 78.45 L 61 72.45 Z M 61 72.45" />
-</svg>
+<svg height="122" width="122" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122 122"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#9ac9ff" d="M61 121c33.14 0 60-26.86 60-60s-26.86-60-60-60-60 26.86-60 60 26.86 60 60 60zm0 0" fill="none"/><path fill="#fff" fill-rule="evenodd" d="M72.64 53.45h7v26h-7v-26zm0 0"/><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#9ac9ff" d="M83.36 87.63v-34.81h-44.72v34.81c0 1.86 1.5 3.37 3.35 3.37h38.02c1.85 0 3.35-1.51 3.35-3.37zm0 0M63.18 68.64c0 1.2-.98 2.18-2.18 2.18-1.2 0-2.18-.98-2.18-2.18 0-1.21.98-2.19 2.18-2.19 1.2 0 2.18.98 2.18 2.19zm0 0M61 72.45v6-6zm0 0" fill="none"/></svg>
