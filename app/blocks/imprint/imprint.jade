@@ -9,7 +9,11 @@ mixin imprint()
 
 		+e.items
 			+e.item
-				| Waagen-Schmitt GmbH Hammer Steindamm 27-29 D-22089 Hamburg
+				| Waagen-Schmitt GmbH 
+				+e('br').breack_mob
+				| Hammer Steindamm 27-29
+				+e('br').breack_mob
+				|  D-22089 Hamburg
 				br
 				| Email:
 				+e('a').link(href='mailto:info@waagen-schmitt.de') info@waagen-schmitt.de
@@ -23,14 +27,14 @@ mixin imprint()
 				br
 				| Hamburg District Court HRA 46343
 
-			+e.item
-				+e('span').bold General Manager:
+			+e.item_manager
+				+e('span').bold_manager General Manager:
 				br
 				| Andreas Schmitt
 				br
 				| Thorsten Thiel 
 
-			+e.item
+			+e.item_vat
 				+e('span').bold Vat: 
 				br
 				| DE118604345
@@ -40,7 +44,10 @@ mixin imprint()
 				br
 				| 37737700
 				br
-				+e('span').bold (VerpackV) DSD-Deutschland Reg. No.: 
+				+e('span').bold
+					| (VerpackV) DSD-Deutschland Reg.
+					+e('br').breack_mob
+					| No.: 
 				br
 				| 5545531
 				br
