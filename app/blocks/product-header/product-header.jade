@@ -1,0 +1,12 @@
+mixin product-header(data)
+	- var title = data.title || ''
+	- var subheader = data.subheader || ''
+	- var text = data.text || ''
+	- var image = data.image || ''
+	+b.product-header&attributes(attributes)
+		+e.item
+			+e.header!= title
+			+e.subheader!= subheader
+			+e.text!= text
+		+e.image
+			img(src='assets/images/'+image)

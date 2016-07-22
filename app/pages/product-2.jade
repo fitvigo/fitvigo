@@ -1,0 +1,75 @@
+include /blocks/product/product
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Fitvigo';
+
+block content
+	+product({
+		header: {
+			title: 'Smart Body Analyser Scales by ADE',
+			subheader: 'More than being the ideal weight',
+			image: 'product_2.jpg'
+		},
+		features: [
+			{
+				icon: 'feature_weight',
+				title: 'Weight',
+				text: 'Simple weighing – your weight can be displayed in kg, lb or st'
+			}, {
+				icon: 'feature_body-fat',
+				title: 'Body Fat',
+				text: 'The fat percentage of your weight will tell you if your body is well-balanced'
+			}, {
+				icon: 'feature_body-water',
+				title: 'Body Water',
+				text: 'Water is a main component of your body - therefore you should keep an eye on it'
+			}, {
+				icon: 'feature_muscule',
+				title: 'Muscle Mass',
+				text: 'Knowing the share of your muscles will help you understand your weight better'
+			}, {
+				icon: 'feature_bone',
+				title: 'Bone Mass',
+				text: 'Your bone mass provides information on the state of your basic framework'
+			}, {
+				icon: 'feature_bmi',
+				title: 'BMI',
+				text: 'Based on your height, weight, age and gender the scale calculates your BMI'
+			}
+		],
+		items: [{
+			title: 'BA 1600',
+			text: 'Color: <span class="preview-black">Black</span>',
+			list: [
+				'ITO-coated surface',
+				'Units of weight: kg, lb and st',
+				'Graduation: 100 g',
+				'Body fat, body water and muscle mass in precise 0.1% intervals',
+				'Bone mass in accurate 100g increments',
+				'Batteries included 4 x 1,5 V AAA',
+				'Dimensions LCD Display 50 x 90 mm',
+				'Dimensions scale 320 x 330 x 27 mm'
+			],
+			user: '8 users',
+			button: 'Buy BA 1600 online',
+			image: 'scales_1.jpg'
+		}, {
+			isImageLeft: true,
+			title: 'BA 1601',
+			text: 'Color: <span class="preview-silver-black">Silver/Black</span>',
+			list: [
+				'Scale surface made of safety glass',
+				'Units of weight: kg, lb and st',
+				'Graduation: 100 g',
+				'Body fat, body water and muscle mass in precise 0.1% intervals',
+				'Bone mass in accurate 100g increments',
+				'Batteries included 4 x 1,5 V AAA',
+				'Dimensions LCD Display 70 x 70 mm',
+				'Dimensions scale 310 x 310 x 24,2 m'
+			],
+			user: 'One user',
+			button: 'Buy BA 1601 online',
+			image: 'scales_2.jpg'
+		}]
+	})

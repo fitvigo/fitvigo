@@ -1,0 +1,63 @@
+include /blocks/product/product
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'Fitvigo';
+
+block content
+	+product({
+		header: {
+			title: 'Smart Activity Tracker by ADE',
+			subheader: 'One step ahead.',
+			text: 'Go for it<br>Every step in right direction',
+			image: 'product_1.jpg'
+		},
+		features: [
+			{
+				icon: 'feature_steps',
+				title: 'Steps',
+				text: 'Counts your steps — an active lifestyle is healthy!'
+			}, {
+				icon: 'feature_distance',
+				title: 'Distance',
+				text: 'Shows the distance you covered in km or miles'
+			}, {
+				icon: 'feature_calories',
+				title: 'Calories',
+				text: 'Calculates the calories you have burned'
+			}, {
+				icon: 'feature_sleep',
+				title: 'Sleep',
+				text: 'Tracks your sleep patterns, alarm setting possible'
+			}
+		],
+		technical: [
+			'Time display (hh:mm)',
+			'Memory storage: up to 7 days',
+			'Batteries included 3,7 V Lithium battery / Recharge the battery with USB',
+			'Dimensions of activity meter 210 x 20 x 10 mm',
+			'Circumference of the bracelet: 135 – 235 mm'
+		],
+		items: [{
+			title: 'AM 1600 Black',
+			text: 'Plus two additional bracelets in <span class="preview-green">apple</span> / <span class="preview-blue">ocean</span>',
+			user: 'One user',
+			button: 'Buy AM 1600 online',
+			image: 'tracker_1.jpg'
+		}, {
+			isImageLeft: true,
+			title: 'AM 1601 Berry',
+			text: 'Plus one additional bracelet in <span class="preview-black">black</span>',
+			user: 'One user',
+			button: 'Coming soon',
+			disabledButton: true,
+			image: 'tracker_2.jpg'
+		}, {
+			title: 'AM 1602 Petrol',
+			text: 'Plus one additional bracelet in <span class="preview-black">black</span>',
+			user: 'One user',
+			button: 'Coming soon',
+			disabledButton: true,
+			image: 'tracker_3.jpg'
+		}]
+	})

@@ -1,0 +1,22 @@
+include ../icon/icon
+
+mixin product-item(data)
+	+b.product-item&attributes(attributes)
+		+e.image(class=data.isImageLeft ? '_left' : '_right')
+			img(src='assets/images/'+data.image)
+				
+		+e.data(class=data.isImageLeft ? '_right' : '_left')
+			+e.title= data.title
+			+e.text!= data.text
+			if data.list
+				+e('ul').list
+					each item in data.list
+						+e.item
+							+e.item-text= item
+
+			+e.users
+				+e.user
+					+e.user-icon
+						+icon('user').icon
+					= data.user
+			+e('button').button(class=data.disabledButton ? '_disabled' : '')= data.button

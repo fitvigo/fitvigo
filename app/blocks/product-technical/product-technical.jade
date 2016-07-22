@@ -1,0 +1,6 @@
+mixin product-technical(data)
+	+b.product-technical&attributes(attributes)
+		+e.header Technical features
+		+e.features
+			each item in data
+				+e.item= item

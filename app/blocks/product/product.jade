@@ -1,0 +1,26 @@
+include ../product-header/product-header
+include ../product-features/product-features
+include ../product-technical/product-technical
+include ../product-item/product-item
+include ../header/header
+include ../footer/footer
+
+mixin product(data)
+	+b.product&attributes(attributes)
+		+header
+
+		if data.header
+			+product-header(data.header)
+
+		+e.image(style='background-image: url(assets/images/product_bg.jpg)')
+
+		if data.features
+			+product-features(data.features)
+
+		if data.technical
+			+product-technical(data.technical)
+
+		each item in data.items
+			+product-item(item)
+
+		+footer

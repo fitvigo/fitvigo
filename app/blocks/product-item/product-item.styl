@@ -1,0 +1,104 @@
+.product-item
+	display block
+	width 1040px
+	margin 80px auto 100px
+	overflow hidden
+	
+	&__data
+		width 600px
+		float left
+		
+		&_right
+			width 400px
+			float right
+			
+		+below($tablet)
+			padding-left 50px
+			float none !important
+			width 100%
+	
+	&__image
+		width 400px
+		float right
+		
+		&_left
+			float left
+			
+		+below($tablet)
+			margin-bottom 50px
+			width 100%
+			float none !important
+			display block
+			text-align center
+			
+		img
+			max-width 400px
+			
+			+below($tablet)
+				max-width 100%
+		
+	&__title
+		margin-top 25px
+		margin-bottom 20px
+		font-family proxima_th
+		font-size 40px
+		line-height 40px
+		color #000
+		
+	&__text
+		font-size 20px
+		margin-bottom 20px
+		
+	&__users
+		margin-bottom 20px
+		
+	&__user
+		display inline-block
+		height 32px
+		padding 6px 16px
+		border-radius 32px
+		background-color #9dc6ff
+		color #fff
+		font-size 18px
+		line-height 22px
+		
+	&__icon
+		width 70px
+		height 70px
+		
+	&__button
+		width 240px
+		height 50px
+		border 2px solid #9ac9ff
+		border-radius 4px
+		text-align center
+		color #9ac9ff
+		background #fff
+		font-size 20px
+		
+		&_disabled
+			cursor default
+			color rgba(#9ac9ff, .5)
+		
+	&__user-icon
+		position relative
+		top 4px
+		margin-right 7px
+		display inline-block
+		width 16px
+		height 16px
+		overflow hidden
+		
+	&__list
+		margin-bottom 25px
+		list-style disc
+		font-size 18px
+		padding-left 0
+		margin-left 18px
+		
+	&__item
+		color #d8d8d8
+		margin-bottom 12px
+		
+	&__item-text
+		color #000

@@ -1,0 +1,44 @@
+.product-header
+	display block
+	width 1040px
+	margin 100px auto 0
+	text-align center
+	
+	&__item
+		position relative
+		width 550px
+		height 350px
+		display inline-block
+		vertical-align top
+		text-align left
+		
+		+below($tablet)
+			width 50%
+		
+	&__image
+		display inline-block
+		width 420px
+		
+		+below($tablet)
+			width 45%
+		
+	&__header
+		width 560px
+		font-family proxima_th
+		font-size 60px
+		line-height 72px
+		color #000
+		
+	&__subheader
+		margin-top 15px
+		font-size 30px
+		line-height 37px
+		
+	&__text
+		position absolute
+		left 0
+		bottom 0
+		font-family proxima_th
+		font-style italic
+		font-size 20px
+		line-height 26px

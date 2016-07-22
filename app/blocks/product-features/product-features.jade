@@ -1,0 +1,12 @@
+include ../icon/icon
+
+mixin product-features(data)
+	+b.product-features&attributes(attributes)
+		- var itemsPerLine = data.length % 4 === 0 ? '4' : '3'
+		+e.wrapper(class='_cols-'+itemsPerLine)
+			each feature in data
+				+e.item
+					+e.image
+						+icon(feature.icon).icon
+					+e.title= feature.title
+					+e.text= feature.text
