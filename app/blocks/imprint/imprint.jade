@@ -1,0 +1,51 @@
+include ../header/header
+include ../footer/footer
+
+mixin imprint()
+	+b.imprint&attributes(attributes)
+		+header()
+		
+		+e('h1').header Imprint
+
+		+e.items
+			+e.item
+				| Waagen-Schmitt GmbH Hammer Steindamm 27-29 D-22089 Hamburg
+				br
+				| Email:
+				+e('a').link(href='mailto:info@waagen-schmitt.de') info@waagen-schmitt.de
+				br
+				| Tel : +49 (0)40 43 13 59-0
+				br
+				| Fax: +49 (0)40 43 13 59-99
+				br
+				br
+				+e('span').bold Registry:
+				br
+				| Hamburg District Court HRA 46343
+
+			+e.item
+				+e('span').bold General Manager:
+				br
+				| Andreas Schmitt
+				br
+				| Thorsten Thiel 
+
+			+e.item
+				+e('span').bold Vat: 
+				br
+				| DE118604345
+				br
+				br
+				+e('span').bold WEEE-No: 
+				br
+				| 37737700
+				br
+				+e('span').bold (VerpackV) DSD-Deutschland Reg. No.: 
+				br
+				| 5545531
+				br
+				+e('span').bold UBA Reg. No: 
+				br
+				| 21000318
+
+		+footer()
