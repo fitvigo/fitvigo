@@ -1,0 +1,24 @@
+mixin footer()
+	+b.footer&attributes(attributes)
+		+e.items
+			+e.item._app-info
+				+e.link(href='#') App Info
+
+			+e.item._products
+				+e.header Products
+				+e.link(href='#') Activity Tracker
+				+e.link(href='#') Personal Scales
+				+e.link(href='#') Body Analyzer Scales
+				+e.link(href='#') Blood Pressure Monitors 
+
+			+e.item._imprint
+				+e.header Imprint
+				+e.link(href='#') Imprint
+				+e.link(href='#') Privacy policy
+				+e.link(href='#') User agreement
+				+e.link(href='#') Open source
+
+			+e.item._faq
+				+e.link._external(href='#') FAQ
+
+		+e.copyright © 2016 ADE GmbH & Co.

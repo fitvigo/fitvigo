@@ -1,10 +1,17 @@
 include ../logo/logo
 include ../nav/nav
+include ../icon/icon
 
 mixin header()
 	+b.header&attributes(attributes)
 		+e.wrapper
 			+e.logo
+				+e.mobile-nav.mobile-only.js-show-mobile-nav
+					+icon('burger').__burger
+
+				+e.mobile-nav._hidden.mobile-only.js-hide-mobile-nav
+					+icon('close_nav').__close-nav
+
 				+logo
-			+e.nav
+			+e.nav.js-nav
 				+nav

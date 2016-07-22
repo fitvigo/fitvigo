@@ -9,3 +9,13 @@ import('../blocks/**/*')
 
 body
 	font-family proxima_rg
+
+.mobile-only
+	visibility hidden
+	
+	+below($tablet)
+		visibility visible
+		
+.desktop-only
+	+below($tablet)
+		display none

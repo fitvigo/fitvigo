@@ -1,0 +1,77 @@
+.footer
+	display block
+	border-top 1px solid #e4e4e4
+	padding-top 25px
+	padding-bottom 40px
+	
+	+below($tablet)
+		border none
+		padding 10px 0 35px
+	
+	&__items
+		text-align center
+		margin-bottom 50px
+		
+		+below($tablet)
+			display none
+	
+	&__item
+		display inline-block
+		vertical-align top
+		text-align left
+		
+		&_app-info
+			width 170px
+			
+		&_products
+			width 310px
+			
+		&_imprint
+			width 260px
+			
+	&__header
+		margin-bottom 20px
+		color #333
+		font-size 20px
+		line-height 32px
+		font-family proxima_sb
+			
+	&__link
+		display block
+		font-size 20px
+		line-height 32px
+		text-decoration none
+		color #8bafca
+		
+		&:hover
+			color #000
+			
+		&_external
+			position relative
+			padding-right 20px
+			
+			&:after
+				position absolute
+				right 0
+				top 7px
+				width 5px
+				height 5px
+				border-top 1px solid #7e9fc0
+				border-right 1px solid #7e9fc0
+				content ''
+			
+			&:before
+				position absolute
+				right 5px
+				top 6px
+				width 1px
+				height 12px
+				border-right 1px solid #7e9fc0
+				transform rotate(45deg)
+				content ''
+				
+	&__copyright
+		color black
+		opacity .5
+		font-size 14px
+		text-align center

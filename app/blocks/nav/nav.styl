@@ -1,11 +1,20 @@
 .nav
 	display block
-
-	&__link
+	
+	&__item
 		display inline-block
 		margin-right 14px
+		
+		+below($tablet)
+			margin-right 0
+			display block
+			padding 20px 0 20px 16px
+			border-top 1px solid #e4e4e4
+
+	&__link
 		color #7e9fc0
 		text-decoration none
+	
 		
 		&_active
 			color #bbb

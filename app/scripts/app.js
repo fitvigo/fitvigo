@@ -5,11 +5,13 @@ import track from '../blocks/track/';
 import share from '../blocks/share/';
 import protection from '../blocks/protection/';
 import Habits from '../blocks/habits/';
+import Header from '../blocks/header/';
 
 $(() => {
 	svg4everybody();
 
 	const habits = new Habits();
+	const header = new Header();
 
 	const anchors = [
 		'intro',

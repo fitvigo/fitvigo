@@ -1,5 +1,10 @@
 mixin nav()
 	+b.nav&attributes(attributes)
-		+e.link._active(href='#') App Info
-		+e.link(href='#') Products
-		+e.link._external(href='#') FAQ
+		+e.item
+			+e.link._active(href='#') App Info
+		+e.item
+			+e.link(href='#') Products
+		+e.item
+			+e.link(href='#') Imprint
+		+e.item
+			+e.link._external(href='#') FAQ
