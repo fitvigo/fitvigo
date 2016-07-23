@@ -15,6 +15,8 @@
 		
 		+below($tablet)
 			width auto
+			
+		+below($mobile)
 			padding-bottom 0
 	
 	&__logo
@@ -24,8 +26,12 @@
 		position relative
 		
 		+below($tablet)
+			padding-left 20px
+		
+		+below($mobile)
 			display block
 			margin-right 0
+			padding-left 0
 			text-align center
 		
 	&__nav
@@ -35,7 +41,7 @@
 		font-size 20px
 		line-height 23px
 		
-		+below($tablet)
+		+below($mobile)
 			display block
 			height 0
 			overflow hidden
