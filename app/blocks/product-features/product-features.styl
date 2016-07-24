@@ -2,12 +2,14 @@
 	display block
 
 	&__wrapper
-		width 1020px
 		margin 40px auto 100px
+		width 1020px
 		font-size 0
 
 		+below($tablet)
 			margin-top 0
+			margin-bottom 0
+			padding-bottom 83px
 			width 100%
 
 		&_cols-3
@@ -20,52 +22,135 @@
 
 	&__item
 		margin-top 40px
-		box-sizing border-box
 		padding 0 10px
 		display inline-block
-		vertical-align top
 		font-size 20px
 		line-height 24px
 		text-align center
+		vertical-align top
+
+		&:nth-child(2n + 1) ^[0]__item-wrapper
+			+below($tablet)
+				margin-right 45px
+				margin-left auto
+				padding 0 0 65px
+				width 280px
+
+			+below($mobile)
+				margin-right 0
+				margin-left 0
+				width 100%
+
+		&:nth-child(even) ^[0]__item-wrapper
+			+below($tablet)
+				margin-right auto
+				margin-left 45px
+				padding 0 0 65px
+				width 280px
+
+			+below($mobile)
+				margin-right 0
+				margin-left 0
+				width 100%
 
 		+below($tablet)
+			margin-top 0
+			padding 0
 			width 50% !important
+
+		+below($mobile)
+			display block
+			width 100% !important
+
+	&__item-wrapper
+		margin 0
 
 	&__title
 		font-family proxima_li
 		font-size 40px
 		color #9dc6ff
 
+		+below($tablet)
+			padding-left 20px
+			display inline-block
+			vertical-align middle
+
 	&__text
 		margin-top 20px
 		line-height 24px
 
+		+below($tablet)
+			margin-top 10px
+
+	&__item-header
+		+below($tablet)
+			min-height 80px
+
+	&__image
+		+below($tablet)
+			display inline-block
+			vertical-align middle
+
 	&__icon_weight
+		width 53px
+		height 58px
+
 		+below($tablet)
 			width 53px
 			height 58px
 
 	&__icon_body-fat
+		width 58px
+		height 61px
+
 		+below($tablet)
 			width 58px
 			height 61px
 
 	&__icon_body-water
+		width 33px
+		height 56px
+
 		+below($tablet)
 			width 33px
 			height 56px
 
 	&__icon_muscule
+		width 43px
+		height 71px
+
 		+below($tablet)
 			width 43px
 			height 71px
 
 	&__icon_bone
+		width 48px
+		height 58px
+
 		+below($tablet)
 			width 48px
 			height 58px
 
 	&__icon_bmi
+		width 45px
+		height 56px
+
 		+below($tablet)
 			width 45px
 			height 56px
+
+	&__icon_steps
+		width 40px
+		height 57px
+
+	&__icon_distance
+		width 43px
+		height 57px
+
+	&__icon_calories
+		width 43px
+		height 58px
+
+	&__icon_sleep
+		width 55px
+		height 57px

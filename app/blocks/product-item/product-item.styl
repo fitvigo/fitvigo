@@ -1,19 +1,20 @@
 .product-item
-	display block
-	width 1040px
 	margin 80px auto 100px
+	display block
 	overflow hidden
+	width 1040px
 
 	+below($tablet)
+		margin-top 0
 		width auto
 
 	&__data
-		width 600px
 		float left
+		width 600px
 
 		&_right
-			width 400px
 			float right
+			width 400px
 
 		+below($tablet)
 			padding-left 50px
@@ -21,17 +22,17 @@
 			width 100%
 
 	&__image
-		width 400px
 		float right
+		width 400px
 
 		&_left
 			float left
 
 		+below($tablet)
-			margin-bottom 50px
-			width 100%
-			float none !important
+			margin-bottom 104px
 			display block
+			float none !important
+			width 100%
 			text-align center
 
 		img
@@ -48,22 +49,28 @@
 		line-height 40px
 		color #000
 
+		+below($tablet)
+			margin-bottom 15px
+
 	&__text
-		font-size 20px
 		margin-bottom 20px
+		font-size 20px
 
 	&__users
 		margin-bottom 20px
 
+		+below($tablet)
+			margin-bottom 37px
+
 	&__user
+		padding 6px 16px
 		display inline-block
 		height 32px
-		padding 6px 16px
-		border-radius 32px
-		background-color #9dc6ff
-		color #fff
 		font-size 18px
 		line-height 22px
+		color #fff
+		background-color #9dc6ff
+		border-radius 32px
 
 	&__icon
 		width 70px
@@ -72,12 +79,16 @@
 	&__button
 		width 240px
 		height 50px
-		border 2px solid #9ac9ff
-		border-radius 4px
+		font-size 20px
 		text-align center
 		color #9ac9ff
 		background #fff
-		font-size 20px
+		border 2px solid #9ac9ff
+		border-radius 4px
+
+		+below($mobile)
+			margin 0 auto
+			display block
 
 		&_disabled
 			cursor default
@@ -88,20 +99,29 @@
 		top 4px
 		margin-right 7px
 		display inline-block
+		overflow hidden
 		width 16px
 		height 16px
-		overflow hidden
 
 	&__list
 		margin-bottom 25px
+		margin-left 18px
+		padding-left 0
 		list-style disc
 		font-size 18px
-		padding-left 0
-		margin-left 18px
+
+		+below($tablet)
+			margin-bottom 22px
 
 	&__item
-		color #d8d8d8
 		margin-bottom 12px
+		color #d8d8d8
+
+		+below($tablet)
+			margin-bottom 16px
 
 	&__item-text
 		color #000
+
+		+below($tablet)
+			padding-left 3px
