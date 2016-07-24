@@ -7,6 +7,6 @@ mixin product-features(data)
 			each feature in data
 				+e.item
 					+e.image
-						+icon(feature.icon).icon
+						+icon(feature.icon)(class='icon_' + feature.iconMode)
 					+e.title= feature.title
 					+e.text= feature.text
