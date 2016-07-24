@@ -1,7 +1,7 @@
 .product-header
+	margin 100px auto 0
 	display block
 	width 1040px
-	margin 100px auto 0
 	text-align center
 
 	+below($tablet)
@@ -11,16 +11,22 @@
 
 	&__item
 		position relative
+		display inline-block
 		width 550px
 		height 350px
-		display inline-block
-		vertical-align top
 		text-align left
+		vertical-align top
 
 		+below($tablet)
 			padding-left 51px
 			width 55%
 			height auto
+
+		+below($mobile)
+			padding-left 0
+			display block
+			width 100%
+			text-align center
 
 	&__image
 		display inline-block
@@ -61,6 +67,10 @@
 		left 0
 		bottom 0
 		font-family proxima_th
-		font-style italic
 		font-size 20px
+		font-style italic
 		line-height 26px
+
+		+below($tablet)
+			position static
+			padding-top 87px
