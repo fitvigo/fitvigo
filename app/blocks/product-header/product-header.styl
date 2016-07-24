@@ -3,7 +3,12 @@
 	width 1040px
 	margin 100px auto 0
 	text-align center
-	
+
+	+below($tablet)
+		margin-top 64px
+		width auto
+		font-size 0px
+
 	&__item
 		position relative
 		width 550px
@@ -11,29 +16,46 @@
 		display inline-block
 		vertical-align top
 		text-align left
-		
+
 		+below($tablet)
-			width 50%
-		
+			padding-left 51px
+			width 55%
+			height auto
+
 	&__image
 		display inline-block
 		width 420px
-		
+
 		+below($tablet)
+			padding-left 16px
 			width 45%
-		
+			text-align left
+
+		img
+			+below($tablet)
+				width 85%
+
 	&__header
 		width 560px
 		font-family proxima_th
 		font-size 60px
 		line-height 72px
 		color #000
-		
+
+		+below($tablet)
+			width 100%
+			font-size 42px
+			line-height 42px
+
 	&__subheader
 		margin-top 15px
 		font-size 30px
 		line-height 37px
-		
+
+		+below($tablet)
+			margin-top 12px
+			font-size 21px
+
 	&__text
 		position absolute
 		left 0

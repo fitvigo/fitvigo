@@ -1,10 +1,13 @@
 .nav
 	display block
-	
+
 	&__item
 		display inline-block
 		margin-right 14px
-		
+
+		+below($tablet)
+			margin-right 25px
+
 		+below($mobile)
 			margin-right 0
 			display block
@@ -14,15 +17,15 @@
 	&__link
 		color #7e9fc0
 		text-decoration none
-	
-		
+
+
 		&_active
 			color #bbb
-			
+
 		&_external
 			position relative
 			padding-right 20px
-			
+
 			&:after
 				position absolute
 				right 0
@@ -32,7 +35,7 @@
 				border-top 1px solid #7e9fc0
 				border-right 1px solid #7e9fc0
 				content ''
-			
+
 			&:before
 				position absolute
 				right 5px

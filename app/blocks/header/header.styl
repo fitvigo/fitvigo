@@ -5,64 +5,69 @@
 	left 0
 	z-index 10
 	background #fff
-	
+
 	&__wrapper
 		display block
 		width 1040px
 		margin 0 auto
 		padding 17px 0 15px
 		border-bottom 1px solid #e4e4e4
-		
+
 		+below($tablet)
+			margin 0 50px
 			width auto
-			
+			padding-bottom 10px
+
 		+below($mobile)
 			padding-bottom 0
-	
+
 	&__logo
 		display inline-block
 		vertical-align top
 		margin-right 35px
 		position relative
-		
+
 		+below($tablet)
-			padding-left 20px
-		
+			margin-right 31px
+
 		+below($mobile)
 			display block
 			margin-right 0
 			padding-left 0
 			text-align center
-		
+
 	&__nav
 		display inline-block
 		vertical-align top
 		padding-top 10px
 		font-size 20px
 		line-height 23px
-		
+
+		+below($tablet)
+			padding-top 8px
+
 		+below($mobile)
 			display block
 			height 0
 			overflow hidden
 			transition ease-out .4s height
-			
+
 			&_visible
 				height 256px
-			
+
 	&__mobile-nav
-		position absolute	
+		position absolute
 		left 16px
 		top 14px
 		display block
-		
+
 		&_hidden
 			display none
-		
+
 	&__burger
 		width 24px
 		height 14px
-		
+
 	&__close-nav
 		margin-top -3px
 		margin-left 2px

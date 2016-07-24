@@ -5,18 +5,19 @@
 		width 1020px
 		margin 40px auto 100px
 		font-size 0
-		
+
 		+below($tablet)
+			margin-top 0
 			width 100%
-		
+
 		&_cols-3
 			.product-features__item
 				width 340px
-		
+
 		&_cols-4
 			.product-features__item
 				width 255px
-				
+
 	&__item
 		margin-top 40px
 		box-sizing border-box
@@ -26,15 +27,45 @@
 		font-size 20px
 		line-height 24px
 		text-align center
-		
+
 		+below($tablet)
 			width 50% !important
-		
+
 	&__title
 		font-family proxima_li
 		font-size 40px
 		color #9dc6ff
-		
+
 	&__text
 		margin-top 20px
 		line-height 24px
+
+	&__icon_weight
+		+below($tablet)
+			width 53px
+			height 58px
+
+	&__icon_body-fat
+		+below($tablet)
+			width 58px
+			height 61px
+
+	&__icon_body-water
+		+below($tablet)
+			width 33px
+			height 56px
+
+	&__icon_muscule
+		+below($tablet)
+			width 43px
+			height 71px
+
+	&__icon_bone
+		+below($tablet)
+			width 48px
+			height 58px
+
+	&__icon_bmi
+		+below($tablet)
+			width 45px
+			height 56px
