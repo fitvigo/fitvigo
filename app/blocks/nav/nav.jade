@@ -1,10 +1,16 @@
 mixin nav()
 	+b.nav&attributes(attributes)
-		+e.item
-			+e.link._active(href='#') App Info
-		+e.item
-			+e.link(href='#') Products
-		+e.item
-			+e.link(href='#') Imprint
-		+e.item
-			+e.link._external(href='#') FAQ
+		+e('ul').list
+			+e('li').item
+				+e.link._active(href='#') App Info
+			+e('li').item
+				+e.link Products
+				+e('ul').list._subnav
+					+e('li').item
+						+e.link(href='#') Activity tracker
+					+e('li').item
+						+e.link(href='#') Body analyser scales
+			+e('li').item
+				+e.link(href='#') Imprint
+			+e('li').item
+				+e.link._external(href='#') FAQ
