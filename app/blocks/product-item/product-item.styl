@@ -1,5 +1,5 @@
 .product-item
-	margin 80px auto 100px
+	margin 0 auto 100px
 	display block
 	overflow hidden
 	width 1040px
@@ -8,59 +8,83 @@
 		margin-top 0
 		width auto
 
+	+below($mobile)
+		margin-bottom 92px
+
 	&__data
+		padding-left 10px
 		float left
 		width 600px
 
 		&_right
 			float right
-			width 400px
+			width 450px
 
 		+below($tablet)
 			padding-left 50px
 			float none !important
 			width 100%
 
+		+below($mobile)
+			padding 0 16px
+
 	&__image
+		padding-top 15px
 		float right
-		width 400px
+		width 440px
 
 		&_left
 			float left
 
+		&_right
+			text-align right
+
 		+below($tablet)
-			margin-bottom 104px
+			padding-top 0
+			padding-left 15px
+			padding-bottom 98px
 			display block
 			float none !important
 			width 100%
 			text-align center
 
+		+below($mobile)
+			padding-left 10px
+			padding-bottom 45px
+
 		img
-			max-width 400px
+			width 100%
 
 			+below($tablet)
-				max-width 100%
+				width 58%
+
+			+below($mobile)
+				width 66%
 
 	&__title
-		margin-top 25px
-		margin-bottom 20px
+		padding-bottom 15px
 		font-family proxima_th
 		font-size 40px
 		line-height 40px
 		color #000
 
-		+below($tablet)
-			margin-bottom 15px
+		+below($mobile)
+			padding-bottom 17px
+			font-size 32px
+			line-height normal
 
 	&__text
-		margin-bottom 20px
+		margin-bottom 17px
 		font-size 20px
 
-	&__users
-		margin-bottom 20px
+		+below($mobile)
+			margin-bottom 15px
 
-		+below($tablet)
-			margin-bottom 37px
+	&__users
+		padding-bottom 35px
+
+		+below($mobile)
+			padding-bottom 28px
 
 	&__user
 		padding 6px 16px
@@ -77,6 +101,8 @@
 		height 70px
 
 	&__button
+		padding-top 6px
+		padding-left 6px
 		width 240px
 		height 50px
 		font-size 20px
@@ -95,33 +121,62 @@
 			color rgba(#9ac9ff, .5)
 
 	&__user-icon
-		position relative
-		top 4px
 		margin-right 7px
 		display inline-block
-		overflow hidden
+
+	&__icon
+		display inline-block
 		width 16px
 		height 16px
 
 	&__list
-		margin-bottom 25px
 		margin-left 18px
 		padding-left 0
 		list-style disc
 		font-size 18px
 
 		+below($tablet)
-			margin-bottom 22px
+			margin-bottom 15px
 
 	&__item
-		margin-bottom 12px
+		padding-bottom 10px
 		color #d8d8d8
 
-		+below($tablet)
-			margin-bottom 16px
+		&:last-child
+			padding-bottom 5px
+
+		br
+			+below($tablet)
+				display none
 
 	&__item-text
+		padding-left 3px
+		line-height 24px
+		letter-spacing -.1px
 		color #000
 
 		+below($tablet)
 			padding-left 3px
+
+		+below($mobile)
+			padding-left 2px
+
+	.preview
+		padding-left 5px
+
+		&:before
+			margin-right 3px
+			display inline-block
+			width 16px
+			height 16px
+			content ''
+			border-radius 100%
+
+		&_black:before
+			background linear-gradient(to right, #000 50%, #000 50%)
+
+		&_silver-black:before
+			background linear-gradient(to right, #cacaca 50%, #000 50%)
+
+		&_white-lemon:before
+			background linear-gradient(to right, #fff 50%, #b5ce53 50%)
