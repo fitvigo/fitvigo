@@ -12,7 +12,7 @@ mixin product-item(data)
 				+e('ul').list
 					each item in data.list
 						+e.item
-							+e.item-text= item
+							+e.item-text!= item
 
 			+e.users
 				+e.user
