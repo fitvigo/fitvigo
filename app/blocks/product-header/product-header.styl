@@ -1,66 +1,111 @@
 .product-header
+	margin 0 auto
+	padding-top 90px
+	padding-bottom 193px
 	display block
 	width 1040px
-	margin 100px auto 0
-	text-align center
+	font-size 0px
 
 	+below($tablet)
-		margin-top 64px
+		padding-top 64px
+		padding-bottom 106px
 		width auto
-		font-size 0px
+
+	+below($mobile)
+		padding-top 19px
+		padding-bottom 53px
 
 	&__item
 		position relative
+		padding-top 35px
+		display inline-block
 		width 550px
 		height 350px
-		display inline-block
-		vertical-align top
 		text-align left
+		vertical-align top
 
 		+below($tablet)
+			padding-top 0
 			padding-left 51px
 			width 55%
 			height auto
 
+		+below($mobile)
+			padding-left 0
+			display block
+			width 100%
+			text-align center
+
 	&__image
+		padding-left 51px
 		display inline-block
-		width 420px
+		width 490px
+		text-align center
 
 		+below($tablet)
 			padding-left 16px
 			width 45%
 			text-align left
 
+		+below($mobile)
+			padding-top 43px
+			padding-left 10px
+			width 100%
+			text-align center
+
 		img
 			+below($tablet)
 				width 85%
 
+			+below($mobile)
+				width 66%
+
 	&__header
+		padding-left 10px
+		padding-bottom 30px
 		width 560px
 		font-family proxima_th
 		font-size 60px
-		line-height 72px
+		line-height 60px
 		color #000
 
 		+below($tablet)
+			padding-left 0
+			padding-bottom 12px
 			width 100%
 			font-size 42px
 			line-height 42px
 
+		+below($mobile)
+			padding-bottom 12px
+			font-size 32px
+
 	&__subheader
-		margin-top 15px
+		padding-left 9px
 		font-size 30px
 		line-height 37px
+		word-spacing -1px
 
 		+below($tablet)
-			margin-top 12px
+			padding-left 0
 			font-size 21px
+
+		+below($mobile)
+			margin 0 70px
+			line-height normal
 
 	&__text
 		position absolute
 		left 0
 		bottom 0
 		font-family proxima_th
-		font-style italic
 		font-size 20px
+		font-style italic
 		line-height 26px
+
+		+below($tablet)
+			position static
+			padding-top 87px
+
+		+below($mobile)
+			padding 0

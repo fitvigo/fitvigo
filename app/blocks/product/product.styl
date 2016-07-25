@@ -1,14 +1,15 @@
 .product
-	display block
 	padding-top 80px
+	display block
 
 	&__image
 		display block
-		margin-top 150px
-		height 700px
-		background-size cover
+		height 760px
 		background-position center
+		background-size cover
 
 		+below($tablet)
-			margin-top 106px
 			height 456px
+
+		+below($mobile)
+			height 214px
