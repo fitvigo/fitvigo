@@ -12,3 +12,5 @@ mixin product-features(data)
 								+icon(feature.icon)(class='icon_' + feature.iconMode)
 							+e.title= feature.title
 						+e.text= feature.text
+						if feature.subText
+							+e.sub-text= feature.subText
