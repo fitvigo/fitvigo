@@ -1,68 +1,68 @@
 .header
 	position fixed
+	z-index 10
 	top 0
 	right 0
 	left 0
-	z-index 10
 	background #fff
-	
+
 	&__wrapper
+		margin 0 auto
+		padding 17px 0 10px
 		display block
 		width 1040px
-		margin 0 auto
-		padding 17px 0 15px
 		border-bottom 1px solid #e4e4e4
-		
+
 		+below($tablet)
+			margin 0 50px
+			padding-bottom 10px
 			width auto
-			
+
 		+below($mobile)
+			margin 0
 			padding-bottom 0
-	
+
 	&__logo
+		position relative
+		margin-right 31px
 		display inline-block
 		vertical-align top
-		margin-right 35px
-		position relative
-		
-		+below($tablet)
-			padding-left 20px
-		
+
 		+below($mobile)
-			display block
 			margin-right 0
 			padding-left 0
+			display block
 			text-align center
-		
+
 	&__nav
+		padding-top 8px
 		display inline-block
-		vertical-align top
-		padding-top 10px
 		font-size 20px
 		line-height 23px
-		
+		vertical-align top
+
 		+below($mobile)
 			display block
-			height 0
 			overflow hidden
-			transition ease-out .4s height
-			
+			height 0
+			transition height .4s ease-out
+
 			&_visible
 				height 256px
-			
+
 	&__mobile-nav
-		position absolute	
-		left 16px
+		position absolute
 		top 14px
+		left 16px
 		display block
-		
+
 		&_hidden
 			display none
-		
+
 	&__burger
 		width 24px
 		height 14px
-		
+
 	&__close-nav
 		margin-top -3px
 		margin-left 2px

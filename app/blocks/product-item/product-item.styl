@@ -1,104 +1,182 @@
 .product-item
+	margin 0 auto 100px
 	display block
-	width 1040px
-	margin 80px auto 100px
 	overflow hidden
-	
+	width 1040px
+
+	+below($tablet)
+		margin-top 0
+		width auto
+
+	+below($mobile)
+		margin-bottom 92px
+
 	&__data
-		width 600px
+		padding-left 10px
 		float left
-		
+		width 600px
+
 		&_right
-			width 400px
 			float right
-			
+			width 450px
+
 		+below($tablet)
 			padding-left 50px
 			float none !important
 			width 100%
-	
+
+		+below($mobile)
+			padding 0 16px
+
 	&__image
-		width 400px
+		padding-top 15px
 		float right
-		
+		width 440px
+
 		&_left
 			float left
-			
+
+		&_right
+			text-align right
+
 		+below($tablet)
-			margin-bottom 50px
-			width 100%
-			float none !important
+			padding-top 0
+			padding-left 15px
+			padding-bottom 98px
 			display block
+			float none !important
+			width 100%
 			text-align center
-			
+
+		+below($mobile)
+			padding-left 10px
+			padding-bottom 45px
+
 		img
-			max-width 400px
-			
+			width 100%
+
 			+below($tablet)
-				max-width 100%
-		
+				width 58%
+
+			+below($mobile)
+				width 66%
+
 	&__title
-		margin-top 25px
-		margin-bottom 20px
+		padding-bottom 15px
 		font-family proxima_th
 		font-size 40px
 		line-height 40px
 		color #000
-		
+
+		+below($mobile)
+			padding-bottom 17px
+			font-size 32px
+			line-height normal
+
 	&__text
+		margin-bottom 17px
 		font-size 20px
-		margin-bottom 20px
-		
+
+		+below($mobile)
+			margin-bottom 15px
+
 	&__users
-		margin-bottom 20px
-		
+		padding-bottom 35px
+
+		+below($mobile)
+			padding-bottom 28px
+
 	&__user
+		padding 6px 16px
 		display inline-block
 		height 32px
-		padding 6px 16px
-		border-radius 32px
-		background-color #9dc6ff
-		color #fff
 		font-size 18px
 		line-height 22px
-		
+		color #fff
+		background-color #9dc6ff
+		border-radius 32px
+
 	&__icon
 		width 70px
 		height 70px
-		
+
 	&__button
+		padding-top 6px
+		padding-left 6px
 		width 240px
 		height 50px
-		border 2px solid #9ac9ff
-		border-radius 4px
+		font-size 20px
 		text-align center
 		color #9ac9ff
 		background #fff
-		font-size 20px
-		
+		border 2px solid #9ac9ff
+		border-radius 4px
+
+		+below($mobile)
+			margin 0 auto
+			display block
+
 		&_disabled
 			cursor default
 			color rgba(#9ac9ff, .5)
-		
+
 	&__user-icon
-		position relative
-		top 4px
 		margin-right 7px
+		display inline-block
+
+	&__icon
 		display inline-block
 		width 16px
 		height 16px
-		overflow hidden
-		
+
 	&__list
-		margin-bottom 25px
+		margin-left 18px
+		padding-left 0
 		list-style disc
 		font-size 18px
-		padding-left 0
-		margin-left 18px
-		
+
+		+below($tablet)
+			margin-bottom 15px
+
 	&__item
+		padding-bottom 10px
 		color #d8d8d8
-		margin-bottom 12px
-		
+
+		&:last-child
+			padding-bottom 5px
+
+		br
+			+below($tablet)
+				display none
+
 	&__item-text
+		padding-left 3px
+		line-height 24px
+		letter-spacing -.1px
 		color #000
+
+		+below($tablet)
+			padding-left 3px
+
+		+below($mobile)
+			padding-left 2px
+
+	.preview
+		padding-left 5px
+
+		&:before
+			margin-right 3px
+			display inline-block
+			width 16px
+			height 16px
+			content ''
+			border-radius 100%
+
+		&_black:before
+			background linear-gradient(to right, #000 50%, #000 50%)
+
+		&_silver-black:before
+			background linear-gradient(to right, #cacaca 50%, #000 50%)
+
+		&_white-lemon:before
+			background linear-gradient(to right, #fff 50%, #b5ce53 50%)

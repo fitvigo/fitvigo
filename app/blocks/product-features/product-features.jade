@@ -6,7 +6,11 @@ mixin product-features(data)
 		+e.wrapper(class='_cols-'+itemsPerLine)
 			each feature in data
 				+e.item
-					+e.image
-						+icon(feature.icon).icon
-					+e.title= feature.title
-					+e.text= feature.text
+					+e.item-wrapper
+						+e.item-header
+							+e.image
+								+icon(feature.icon)(class='icon_' + feature.iconMode)
+							+e.title= feature.title
+						+e.text= feature.text
+						if feature.subText
+							+e.sub-text= feature.subText
