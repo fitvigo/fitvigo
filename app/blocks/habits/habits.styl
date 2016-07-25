@@ -27,6 +27,7 @@
 		font-size 20px
 		font-weight 300
 		line-height 24px
+		z-index 12
 		text-align center
 
 	&__features
@@ -83,6 +84,7 @@
 			left 672px
 
 		&_inactive
+			transform translateY(30px)
 			opacity .4
 
 		&_active
@@ -90,6 +92,7 @@
 			top 30px
 			left 50%
 			margin-left -60px
+			transform rotate(30deg)
 
 			.habits__icon
 				width 120px
@@ -107,15 +110,17 @@
 
 	&__habit-desc
 		position absolute
-		top 0
+		top 60px
 		right 0
 		left 0
 		font-size 18px
 		color #333
 		opacity 0
-		transition ease-out .4s opacity
+		transition ease-out .4s all
+		z-index 12
 
 		&_active
+			top 0
 			opacity 1
 
 	&__white-screen
@@ -124,9 +129,10 @@
 		left 0
 		width 100%
 		height 100%
-		background rgba(255, 255, 255, .6)
+		background rgba(255, 255, 255, .8)
 		opacity 0
 		transition ease-out .4s opacity
 
 		&_visible
 			opacity 1
+			z-index 10
