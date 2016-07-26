@@ -20,7 +20,8 @@ mixin product(data)
 		if data.technical
 			+product-technical(data.technical)
 
-		each item in data.items
-			+product-item(item)
+		+e.items
+			each item in data.items
+				+product-item(item)
 
 		+footer
