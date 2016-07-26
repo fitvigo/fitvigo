@@ -31,6 +31,9 @@
 			.product-features__item
 				width 255px
 
+				&:nth-child(3n - 1)
+					margin 0
+
 	&__item
 		display inline-block
 		font-size 20px
@@ -84,9 +87,12 @@
 		color #9dc6ff
 
 		+below($tablet)
-			// padding-left 20px
-			// display inline-block
 			vertical-align middle
+
+		&_inline
+			+below($tablet)
+				padding-left 20px
+				display inline-block
 
 	&__text
 		line-height 24px
@@ -111,9 +117,11 @@
 		line-height 98px
 
 		+below($tablet)
-			// display inline-block
 			vertical-align middle
 
+		&_inline
+			+below($tablet)
+				display inline-block
 
 
 	&__icon
