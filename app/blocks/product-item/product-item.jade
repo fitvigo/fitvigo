@@ -19,4 +19,4 @@ mixin product-item(data)
 					+e.user-icon
 						+icon('user').icon
 					= data.user
-			+e('button').button(class=data.disabledButton ? '_disabled' : '')= data.button
+			+e('a')(href='#').button(class=data.disabledButton ? '_disabled' : '')= data.button
