@@ -1,6 +1,12 @@
 .product-technical
 	margin-bottom 40px
+	padding-top 37px
+	padding-bottom 51px
 	display block
+	background-color #f7f7f8
+
+	+below($mobile)
+		padding-left 16px
 
 	& h2,
 	&__header
@@ -11,7 +17,21 @@
 		text-align center
 		color #000
 
+	&__features
+		+below($mobile)
+			margin-left 18px
+			padding-left 0
+			list-style disc
+
 	&__item
+		+below($mobile)
+			color #d8d8d8
+
+	&__item-text
 		font-size 20px
 		line-height 30px
 		text-align center
+		color #000
+
+		+below($mobile)
+			text-align left
