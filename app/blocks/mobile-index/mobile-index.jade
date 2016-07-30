@@ -1,0 +1,53 @@
+include ../habits/habits
+include ../protection/protection
+include ../share/share
+
+mixin mobile-index()
+	+b.mobile-index&attributes(attributes)
+		+e.title
+			h1 Fitvigo
+
+		+e.phone
+			+e('img')(src='assets/images/blue_blur.png').ball-image
+
+		+e.text._center
+			p Synth polaroid bitters chillwave pickled
+			p Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party 
+			p Leggings ethical McSweeney's, normcore you probably haven
+
+		+e.ball
+			+e('img')(src='assets/images/blue_blur.png').ball-image-large
+
+		+e.header
+			h1 Hi, I´m Vigo
+
+		+e.text._center.js-slick-text
+			p Synth polaroid bitters chillwave pickled
+			p Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party 
+
+		+e.header
+			h1 Tracking your datas
+
+		+e.text._center
+			p from Apple Health or Google fit or with devices — simple at a glance 
+
+		+e.track
+			+e('img').track-bg(src='assets/images/track_bg.png')
+			+e.track-data
+
+		+e.text._center.js-slick-text
+			p Synth polaroid bitters chillwave pickled
+			p Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party 
+			p Synth polaroid bitters chillwave pickled
+
+		+e.habits
+			+habits
+
+		+e.protection
+			+protection
+
+		+e.share
+			+share
+
+		+e.products
+			+products

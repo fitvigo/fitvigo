@@ -24,10 +24,12 @@ short-animation = ease-out .5s all
 		padding-top 250px
 		margin-bottom 20px
 		font-family proxima_th
-		font-size 60px
-		line-height 70px
+		header()
 		text-align center
 		color #fff
+		
+		+below($switchNavAt)
+			padding-top 100px
 
 	&__text
 		margin 0 auto
@@ -36,6 +38,12 @@ short-animation = ease-out .5s all
 		line-height 32px
 		text-align center
 		color #fff
+		
+		+below($switchNavAt)
+			width auto
+			padding 0 20px
+			font-size 18px
+			line-height 24px
 
 	&__icons
 		position relative
@@ -48,6 +56,15 @@ short-animation = ease-out .5s all
 			& .share__icon
 				animation bounce .2s 1 forwards
 				animation-timing-function ease-out
+				
+		+below($switchNavAt)
+			background-size contain
+			background-repeat no-repeat
+			width 300px
+			margin 25px auto 0
+			
+			& .share__icon
+				animation none
 
 	&__icon
 		position absolute
@@ -59,19 +76,35 @@ short-animation = ease-out .5s all
 		background-size contain
 		transition short-animation
 		transform translate(-50%, 50%)
+		
+		+below($switchNavAt)
+			width 32px
+			height 32px
 
 		&_gmail
 			left 24px
 			background-image url(../images/logo_gmail.png)
+			
+			+below($switchNavAt)
+				left 12px
 
 		&_wechat
 			left 158px
 			background-image url(../images/logo_wechat.png)
+			
+			+below($switchNavAt)
+				left 98px
 
 		&_whatsapp
 			left 242px
 			background-image url(../images/logo_whatsapp.png)
+			
+			+below($switchNavAt)
+				left 203px
 
 		&_fb
 			left 392px
 			background-image url(../images/logo_fb.png)
+			
+			+below($switchNavAt)
+				left 290px

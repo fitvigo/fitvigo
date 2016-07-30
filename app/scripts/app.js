@@ -9,12 +9,23 @@ import '../blocks/header/';
 import '../blocks/nav/';
 import 'slick-carousel';
 
-function initSlick() {
+function getDevice() {
 	const isMobile = $('.js-detectors .only-mobile').is(':visible');
 	const isTablet = $('.js-detectors .only-tablet').is(':visible');
 	const isDesktop = $('.js-detectors .only-desktop').is(':visible');
-
+	let device = 'desktop';
 	if (isMobile) {
+		device = 'mobile';
+	} else if (isTablet) {
+		device = 'tablet';
+	}
+
+	return device;
+}
+
+function initSlick() {
+	const device = getDevice();
+	if (device === 'mobile') {
 		$('.js-mobile-slick:not(.slick-inited)')
 			.addClass('slick-inited')
 			.slick({
@@ -70,6 +81,16 @@ $(() => {
 	});
 
 	initSlick();
-	$(window).resize(initSlick);
+	$(window).resize(() => {
+		initSlick();
+	});
+
+	$('.js-slick-text').slick({
+		'slidesToShow': 1,
+		'slidesToScroll': 1,
+		'dots': true,
+		'arrows': false,
+		'adaptiveHeight': true
+	});
 
 });

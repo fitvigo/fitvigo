@@ -20,6 +20,10 @@
 		font-size 20px
 		line-height 32px
 		text-align center
+		
+		+below($switchNavAt)
+			width auto
+			padding 0 20px
 
 	&__lock
 		position relative
@@ -35,4 +39,7 @@
 		transition ease-out .2s top
 
 		&_closed
+			top -30px
+			
+		+below($switchNavAt)
 			top -30px

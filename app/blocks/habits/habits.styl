@@ -17,6 +17,9 @@
 		font-weight 100
 		text-align center
 		color black
+		
+		+below($switchNavAt)
+			padding-top 100px
 
 	&__desc
 		position relative
@@ -29,6 +32,10 @@
 		line-height 24px
 		z-index 12
 		text-align center
+		
+		+below($switchNavAt)
+			width auto
+			margin 0 20px
 
 	&__features
 		position relative
@@ -38,10 +45,16 @@
 		flex-direction row
 		justify-content space-between
 		width 752px
+		
+		+below($switchNavAt)
+			width 270px
 
 	&__icon
 		width 80px
 		transition ease-out .4s all
+		
+		+below($switchNavAt)
+			width 60px
 
 	&__text
 		position absolute
@@ -64,24 +77,42 @@
 
 		&_h2
 			left 96px
+			+below($switchNavAt)
+				left 70px
 
 		&_h3
 			left 192px
+			+below($switchNavAt)
+				left 140px
 
 		&_h4
 			left 288px
+			+below($switchNavAt)
+				left 210px
 
 		&_h5
 			left 384px
+			+below($switchNavAt)
+				left 0
+				top 140px
 
 		&_h6
 			left 480px
+			+below($switchNavAt)
+				left 70px
+				top 140px
 
 		&_h7
 			left 576px
+			+below($switchNavAt)
+				left 140px
+				top 140px
 
 		&_h8
 			left 672px
+			+below($switchNavAt)
+				left 210px
+				top 140px
 
 		&_inactive
 			transform translateY(30px)

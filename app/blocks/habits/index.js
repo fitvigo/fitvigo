@@ -27,7 +27,7 @@ class Habits {
 			.removeClass(this.classes.habitInactive);
 
 		$(this.selectors.text).removeClass(this.classes.textActive);
-		$(this.selectors.text).eq(0).addClass(this.classes.textActive);
+		$(this.selectors.text + '_default').addClass(this.classes.textActive);
 		$(this.selectors.desc).removeClass(this.classes.descActive);
 		$(this.selectors.whiteScreen).removeClass(this.classes.whiteScreenVisible);
 	}

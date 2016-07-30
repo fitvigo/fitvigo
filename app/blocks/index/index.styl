@@ -22,3 +22,17 @@
 
 			& span
 				display none
+
+	&__mobile
+		position fixed
+		top 70px
+		left 0
+		right 0
+		bottom 0
+		background #fff
+		overflow auto
+		display none
+		
+		+below($switchNavAt)
+			display block
+			z-index 15

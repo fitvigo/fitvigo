@@ -6,6 +6,7 @@ include ../protection/protection
 include ../share/share
 include ../products/products
 include ../habits/habits
+include ../mobile-index/mobile-index
 
 mixin index()
 	+b.index
@@ -31,3 +32,6 @@ mixin index()
 
 			+section.__products
 				+products
+
+		+e.mobile
+			+mobile-index
