@@ -55,4 +55,4 @@ class Habits {
 	}
 }
 
-export default Habits;
+export default new Habits();

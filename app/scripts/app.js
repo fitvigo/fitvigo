@@ -4,15 +4,34 @@ import 'fullpage.js';
 import track from '../blocks/track/';
 import share from '../blocks/share/';
 import protection from '../blocks/protection/';
-import Habits from '../blocks/habits/';
-import Header from '../blocks/header/';
+import '../blocks/habits/';
+import '../blocks/header/';
 import '../blocks/nav/';
+import 'slick-carousel';
+
+function initSlick() {
+	const isMobile = $('.js-detectors .only-mobile').is(':visible');
+	const isTablet = $('.js-detectors .only-tablet').is(':visible');
+	const isDesktop = $('.js-detectors .only-desktop').is(':visible');
+
+	if (isMobile) {
+		$('.js-mobile-slick:not(.slick-inited)')
+			.addClass('slick-inited')
+			.slick({
+				'slidesToShow': 1,
+				'slidesToScroll': 1,
+				'dots': true,
+				'arrows': false
+			});
+	} else {
+		$('.js-mobile-slick.slick-inited')
+			.removeClass('slick-inited')
+			.slick('unslick');
+	}
+}
 
 $(() => {
 	svg4everybody();
-
-	const habits = new Habits();
-	const header = new Header();
 
 	const anchors = [
 		'intro',
@@ -26,6 +45,8 @@ $(() => {
 		'share',
 		'products'
 	];
+
+	const mobileAt = 600;
 
 	const scrollingSpeed = 1000;
 
@@ -47,4 +68,8 @@ $(() => {
 		event.preventDefault();
 		$.fn.fullpage.moveSectionDown();
 	});
+
+	initSlick();
+	$(window).resize(initSlick);
+
 });

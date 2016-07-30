@@ -12,7 +12,10 @@ mixin product(data)
 		if data.header
 			+product-header(data.header)
 
-		+e.image(style='background-image: url(assets/images/product_bg.jpg)')
+		+e.images.js-mobile-slick
+			+e.image._left(style='background-image: url(assets/images/product_img_1.jpg)')
+			+e.image._right-top(style='background-image: url(assets/images/product_img_2.jpg)')
+			+e.image._right-bottom(style='background-image: url(assets/images/product_img_3.jpg)')
 
 		if data.features
 			+product-features(data.features)
