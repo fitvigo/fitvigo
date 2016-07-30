@@ -46,3 +46,12 @@ retinaBackground($image, $ext = 'png') {
 small-height()
 	@media only screen and (max-height: 800px)
 		{block}
+		
+header()
+	font-size 60px
+	line-height 72px
+	font-family proxima_th
+	
+	+below($mobile)
+		font-size 40px
+		line-height 48px

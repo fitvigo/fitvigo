@@ -1,0 +1,9 @@
+mixin languages()
+	+b.languages&attributes(attributes)
+		+e('ul').list
+			+e('li').item._active
+				+e('a').link(href='#') DE
+			+e('li').item
+				+e('a').link(href='#') EN
+			+e('li').item
+				+e('a').link(href='#') FR
