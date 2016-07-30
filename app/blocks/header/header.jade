@@ -2,20 +2,20 @@ include ../logo/logo
 include ../nav/nav
 include ../languages/languages
 include ../icon/icon
+include ../burger/burger
 
 mixin header()
 	+b.header&attributes(attributes)
-		+e.wrapper
-			+e.logo
-				+e.mobile-nav.mobile-only.js-show-mobile-nav
-					+icon('burger').__burger
+		+wrapper
+			+e.content
+				+e.burger
+					+burger.js-nav-burger
 
-				+e.mobile-nav._hidden.mobile-only.js-hide-mobile-nav
-					+icon('close_nav').__close-nav
+				+e.logo
+					+logo
 
-				+logo
-			+e.nav.js-nav
-				+nav
+				+e.nav.js-nav
+					+nav
 
-			+e.lang
-				+languages
+				+e.lang
+					+languages

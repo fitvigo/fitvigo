@@ -1,0 +1,56 @@
+.burger
+	display block
+	position relative
+	z-index 20
+	
+	&__label
+		cursor pointer
+	
+	&__icon
+		position relative
+		display block
+		width 24px
+		height 24px
+		border none
+		background none
+
+		&:before,
+		&:after,
+		^[0]__middle-line
+			position absolute
+			left 0
+			right 0
+			height 2px
+			background-color #9ac9ff
+			content ''
+			transform-origin 0 0
+			
+		&:before
+			top 5px
+			transition ease-out .3s all
+			
+		&:after
+			bottom 5px
+			transition ease-out .3s all
+	
+		^[0]__middle-line
+			top 11px
+			opacity 1
+			transition ease-out .3s opacity
+			
+	&__isClosedIcon
+		display none
+		&:checked
+			& + ^[0]__icon
+				&:before
+					top 0
+					width 31px
+					transform rotate(45deg)
+					
+				&:after
+					bottom 0
+					width 31px
+					transform rotate(-45deg)
+				
+				& ^[0]__middle-line
+					opacity 0
