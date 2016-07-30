@@ -3,9 +3,17 @@
 	position relative
 	width 32px
 	
+	+below($switchNavAt)
+		margin-left 16px
+		padding-bottom 10px
+		width auto
+	
 	&:hover
 		& ^[0]__item
 			display block
+			
+			+below($switchNavAt)
+				display inline-block
 	
 	&__list
 		position absolute
@@ -16,6 +24,11 @@
 		box-shadow 0 2px 6px rgba(0, 0, 0, 0.25)
 		border-radius 2px
 		text-align center
+		
+		+below($switchNavAt)
+			position static
+			text-align left
+			box-shadow none
 		
 	&__item
 		display none
@@ -33,6 +46,26 @@
 			
 			& ^[0]__link
 				line-height 25px
+				
+		+below($switchNavAt)
+			&,
+			&_active
+				position static
+				width 32px
+				display inline-block
+				border none
+				font-size 14px
+				text-align center
+				
+				& ^[0]__link
+					line-height 32px
+				
+			&_active
+				background-color #9ac9ff
+				border-radius 100%
+				
+				& ^[0]__link
+					color #fff
 		
 	&__link
 		display block
@@ -42,4 +75,3 @@
 		
 		&:hover
 			color #171f29
-		

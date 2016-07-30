@@ -1,6 +1,6 @@
 mixin burger()
-	+b.burger&attributes(attributes)
+	+b.burger
 		+e('label').label
-			+e('input').isClosedIcon(type='checkbox')
+			+e('input').isClosedIcon(type='checkbox')&attributes(attributes)
 			+e.icon
 				+e.middle-line

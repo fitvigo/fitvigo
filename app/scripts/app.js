@@ -6,6 +6,7 @@ import share from '../blocks/share/';
 import protection from '../blocks/protection/';
 import Habits from '../blocks/habits/';
 import Header from '../blocks/header/';
+import '../blocks/nav/';
 
 $(() => {
 	svg4everybody();

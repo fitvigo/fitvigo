@@ -9,13 +9,15 @@ mixin header()
 		+wrapper
 			+e.content
 				+e.burger
-					+burger.js-nav-burger
+					+burger.js-burger-status
 
 				+e.logo
 					+logo
 
-				+e.nav.js-nav
-					+nav
+				+e.navigations.js-navigations
+					+e.scroll
+						+e.nav
+							+nav
 
-				+e.lang
-					+languages
+						+e.lang
+							+languages

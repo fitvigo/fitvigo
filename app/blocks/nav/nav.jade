@@ -3,14 +3,30 @@ mixin nav()
 		+e('ul').list
 			+e('li').item
 				+e.link._active(href='#') App Info
-			+e('li').item
+
+			+e('li').item._has-child
 				+e.link Products
 				+e('ul').list._subnav
 					+e('li').item
 						+e.link(href='#') Activity tracker
 					+e('li').item
 						+e.link(href='#') Body analyser scales
+					+e('li').item
+						+e.link(href='#') Activity tracker
+					+e('li').item
+						+e.link(href='#') Body analyser scales
+
 			+e('li').item
-				+e.link(href='#') Imprint
+				+e.link Imprint
+				+e('ul').list._subnav
+					+e('li').item
+						+e.link(href='#') Activity tracker
+					+e('li').item
+						+e.link(href='#') Body analyser scales
+					+e('li').item
+						+e.link(href='#') Activity tracker
+					+e('li').item
+						+e.link(href='#') Body analyser scales
+
 			+e('li').item
 				+e.link._external(href='#') FAQ
