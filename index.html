@@ -19,37 +19,115 @@
 		<title>Fitvigo</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-		<link href="assets/styles/app.min.css?t=1469438881460" rel="stylesheet">
+		<link href="assets/styles/app.min.css?t=1469966775830" rel="stylesheet">
 	</head>
 
 	<body class="page">
+		<div class="page__detectors js-detectors">
+			<div class="only-mobile"></div>
+			<div class="only-tablet"></div>
+			<div class="only-desktop"></div>
+		</div>
 		<div class="index">
 			<div class="header">
-				<div class="header__wrapper">
-					<div class="header__logo">
-						<div class="header__mobile-nav mobile-only js-show-mobile-nav">
-							<svg class="header__burger"><use xlink:href="assets/images/icon.svg#icon_burger"></use></svg>
-						</div>
-						<div class="header__mobile-nav header__mobile-nav_hidden mobile-only js-hide-mobile-nav">
-							<svg class="header__close-nav"><use xlink:href="assets/images/icon.svg#icon_close_nav"></use></svg>
-						</div>
-						<div class="logo">
-							<img src="assets/images/logo.png" />
-						</div>
-					</div>
-					<div class="header__nav js-nav">
-						<div class="nav">
-							<div class="nav__item">
-								<a href="#" class="nav__link nav__link_active">App Info</a>
+				<div class="wrapper">
+					<div class="header__content">
+						<div class="header__burger">
+							<div class="burger">
+								<label class="burger__label">
+									<input type="checkbox" class="burger__isClosedIcon js-burger-status" />
+									<span class="burger__icon">
+										<span class="burger__middle-line"></span>
+									</span>
+								</label>
 							</div>
-							<div class="nav__item">
-								<a href="#" class="nav__link">Products</a>
+						</div>
+						<div class="header__logo">
+							<div class="logo">
+								<img src="assets/images/logo.png" />
 							</div>
-							<div class="nav__item">
-								<a href="#" class="nav__link">Imprint</a>
-							</div>
-							<div class="nav__item">
-								<a href="#" class="nav__link nav__link_external">FAQ</a>
+						</div>
+						<div class="header__navigations js-navigations">
+							<div class="header__scroll">
+								<div class="header__nav">
+									<div class="nav">
+										<ul class="nav__list">
+											<li class="nav__item">
+												<a href="#" class="nav__link nav__link_active">App Info</a>
+											</li>
+											<li class="nav__item">
+												<div class="nav__link">Products</div>
+												<ul class="nav__list nav__list_subnav">
+													<li class="nav__item">
+														<a href="#" class="nav__link">Activity tracker</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Body analyser scales</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Activity tracker</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Body analyser scales</a>
+													</li>
+												</ul>
+											</li>
+											<li class="nav__item">
+												<div class="nav__link">Imprint</div>
+												<ul class="nav__list nav__list_subnav">
+													<li class="nav__item">
+														<a href="#" class="nav__link">Activity tracker</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Body analyser scales</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Activity tracker</a>
+													</li>
+													<li class="nav__item">
+														<a href="#" class="nav__link">Body analyser scales</a>
+													</li>
+												</ul>
+											</li>
+											<li class="nav__item">
+												<a href="#" class="nav__link nav__link_external">FAQ</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="header__lang">
+									<div class="languages">
+										<ul class="languages__list">
+											<li class="languages__item languages__item_active">
+												<a href="#" class="languages__link">DE</a>
+											</li>
+											<li class="languages__item">
+												<a href="#" class="languages__link">EN</a>
+											</li>
+											<li class="languages__item">
+												<a href="#" class="languages__link">FR</a>
+											</li>
+											<li class="languages__item">
+												<a href="#" class="languages__link">ES</a>
+											</li>
+											<li class="languages__item">
+												<a href="#" class="languages__link">IT</a>
+											</li>
+											<li class="languages__item">
+												<a href="#" class="languages__link">RU</a>
+											</li>
+											<li class="languages__item">
+												<a href="#" class="languages__link">PT</a>
+											</li>
+											<li class="languages__item">
+												<a href="#" class="languages__link">PL</a>
+											</li>
+											<li class="languages__item">
+												<a href="#" class="languages__link">KO</a>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -126,7 +204,7 @@
 							<div class="habits__white-screen"></div>
 							<div class="habits__title">Habits</div>
 							<div class="habits__desc">
-								<div class="habits__text habits__text_active">Vigo is accomplished by suggesting healthier habits, simple tasks you can easily integrate into your everyday life.</div>
+								<div class="habits__text habits__text_active habits__text_default">Vigo is accomplished by suggesting healthier habits, simple tasks you can easily integrate into your everyday life.</div>
 								<div
 									class="habits__text habits__text_h1">Simple tasks you can easily integrate into your everyday life.</div>
 							<div class="habits__text habits__text_h2">Simple tasks you can easily integrate into your everyday life.</div>
@@ -262,6 +340,191 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="index__mobile">
+			<div class="mobile-index">
+				<div class="mobile-index__title">
+					<h1>Fitvigo</h1>
+				</div>
+				<div class="mobile-index__phone">
+					<img src="assets/images/blue_blur.png" class="mobile-index__ball-image" alt="" role="presentation" />
+				</div>
+				<div class="mobile-index__text mobile-index__text_center">
+					<p>Synth polaroid bitters chillwave pickled</p>
+					<p>Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof
+						party </p>
+					<p>Leggings ethical McSweeney's, normcore you probably haven</p>
+				</div>
+				<div class="mobile-index__ball">
+					<img src="assets/images/blue_blur.png" class="mobile-index__ball-image-large" alt="" role="presentation" />
+				</div>
+				<div class="mobile-index__header">
+					<h1>Hi, I´m Vigo</h1>
+				</div>
+				<div class="mobile-index__text mobile-index__text_center js-slick-text">
+					<p>Synth polaroid bitters chillwave pickled</p>
+					<p>Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof
+						party </p>
+				</div>
+				<div class="mobile-index__header">
+					<h1>Tracking your datas</h1>
+				</div>
+				<div class="mobile-index__text mobile-index__text_center">
+					<p>from Apple Health or Google fit or with devices — simple at a glance </p>
+				</div>
+				<div class="mobile-index__track">
+					<img src="assets/images/track_bg.png" class="mobile-index__track-bg" alt="" role="presentation" />
+					<div class="mobile-index__track-data"></div>
+				</div>
+				<div class="mobile-index__text mobile-index__text_center js-slick-text">
+					<p>Synth polaroid bitters chillwave pickled</p>
+					<p>Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof
+						party </p>
+					<p>Synth polaroid bitters chillwave pickled</p>
+				</div>
+				<div class="mobile-index__habits">
+					<div class="habits">
+						<div class="habits__wrapper">
+							<div class="habits__white-screen"></div>
+							<div class="habits__title">Habits</div>
+							<div class="habits__desc">
+								<div class="habits__text habits__text_active habits__text_default">Vigo is accomplished by suggesting healthier habits, simple tasks you can easily integrate into your everyday life.</div>
+								<div
+									class="habits__text habits__text_h1">Simple tasks you can easily integrate into your everyday life.</div>
+							<div class="habits__text habits__text_h2">Simple tasks you can easily integrate into your everyday life.</div>
+							<div class="habits__text habits__text_h3">Habits, simple tasks you can easily integrate into your everyday life.</div>
+							<div class="habits__text habits__text_h4">Simple tasks you can easily integrate into your everyday life.</div>
+							<div class="habits__text habits__text_h5">Simple tasks you can easily integrate into your every6ay life.</div>
+							<div class="habits__text habits__text_h6">Habits, simple tasks you can easily integrate into your everyday life.</div>
+							<div class="habits__text habits__text_h7">Simple tasks you can easily integrate into your every6ay life.</div>
+							<div class="habits__text habits__text_h8">Habits, simple tasks you can easily integrate into your everyday life.</div>
+						</div>
+						<div class="habits__features">
+							<div data-habit="1" class="habits__habit habits__habit_h1">
+								<svg class="habits__icon"><use xlink:href="assets/images/icon.svg#icon_habits_1"></use></svg>
+							</div>
+							<div data-habit="2" class="habits__habit habits__habit_h2">
+								<svg class="habits__icon"><use xlink:href="assets/images/icon.svg#icon_habits_2"></use></svg>
+							</div>
+							<div data-habit="3" class="habits__habit habits__habit_h3">
+								<svg class="habits__icon"><use xlink:href="assets/images/icon.svg#icon_habits_3"></use></svg>
+							</div>
+							<div data-habit="4" class="habits__habit habits__habit_h4">
+								<svg class="habits__icon"><use xlink:href="assets/images/icon.svg#icon_habits_4"></use></svg>
+							</div>
+							<div data-habit="5" class="habits__habit habits__habit_h5">
+								<svg class="habits__icon"><use xlink:href="assets/images/icon.svg#icon_habits_5"></use></svg>
+							</div>
+							<div data-habit="6" class="habits__habit habits__habit_h6">
+								<svg class="habits__icon"><use xlink:href="assets/images/icon.svg#icon_habits_6"></use></svg>
+							</div>
+							<div data-habit="7" class="habits__habit habits__habit_h7">
+								<svg class="habits__icon"><use xlink:href="assets/images/icon.svg#icon_habits_7"></use></svg>
+							</div>
+							<div data-habit="8" class="habits__habit habits__habit_h8">
+								<svg class="habits__icon"><use xlink:href="assets/images/icon.svg#icon_habits_8"></use></svg>
+							</div>
+						</div>
+						<div class="habits__habits-desc">
+							<div class="habits__habit-desc habits__habit-desc_h1">
+								<div class="habits__habit-title">No mails — pay a visit!</div>1 week task</div>
+							<div class="habits__habit-desc habits__habit-desc_h2">
+								<div class="habits__habit-title">No mails — pay a visit!</div>2 week task</div>
+							<div class="habits__habit-desc habits__habit-desc_h3">
+								<div class="habits__habit-title">No mails — pay a visit!</div>3 week task</div>
+							<div class="habits__habit-desc habits__habit-desc_h4">
+								<div class="habits__habit-title">No mails — pay a visit!</div>4 week task</div>
+							<div class="habits__habit-desc habits__habit-desc_h5">
+								<div class="habits__habit-title">No mails — pay a visit!</div>5 week task</div>
+							<div class="habits__habit-desc habits__habit-desc_h6">
+								<div class="habits__habit-title">No mails — pay a visit!</div>6 week task</div>
+							<div class="habits__habit-desc habits__habit-desc_h7">
+								<div class="habits__habit-title">No mails — pay a visit!</div>7 week task</div>
+							<div class="habits__habit-desc habits__habit-desc_h8">
+								<div class="habits__habit-title">No mails — pay a visit!</div>8 week task</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-index__protection">
+				<div class="protection">
+					<div class="protection__header">Data Protection</div>
+					<div class="protection__icon">
+						<svg class="protection__lock-head"><use xlink:href="assets/images/icon.svg#icon_lock_head"></use></svg>
+						<svg class="protection__lock"><use xlink:href="assets/images/icon.svg#icon_lock"></use></svg>
+					</div>
+					<div class="protection__text">Tousled food truck polaroid, salvia bespoke small batch Pinterest Marfa. Fingerstache authentic craft beer, food truck
+						Banksy Carles kale chips hoodie. Trust fund artisan master cleanse fingerstache post-ironic, fashion axe art party
+						Etsy direct trade retro organic. Cliche Shoreditch Odd Future Pinterest, pug disrupt photo booth VHS literally occupy
+						gluten-free.</div>
+				</div>
+			</div>
+			<div class="mobile-index__share">
+				<div class="share">
+					<div class="share__header">Share your data</div>
+					<div class="share__text">with your doctor, family or friends via any channel you want, including
+						<br>What's App, WeChat, Facebook or email.</div>
+					<div class="share__icons">
+						<div class="share__icon share__icon_gmail"></div>
+						<div class="share__icon share__icon_wechat"></div>
+						<div class="share__icon share__icon_whatsapp"></div>
+						<div class="share__icon share__icon_fb"></div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-index__products">
+				<div class="products">
+					<div class="products__header">Products</div>
+					<div class="products__list">
+						<div class="products__item">
+							<div class="products__image">
+								<img src="assets/images/product_activity.png" />
+							</div>
+							<div class="products__title">Activity</div>
+							<div class="products__desc">Synth polaroid bitters chillwave pickled. Vegan disrupt tousled.</div>
+							<div class="products__items">
+								<a href="#" class="products__link">AM 1500</a>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__image">
+								<img src="assets/images/product_scales.png" />
+							</div>
+							<div class="products__title">Scales</div>
+							<div class="products__desc">More than 10 types of scales, which can do anything.</div>
+							<div class="products__items">
+								<a href="#" class="products__link">BA 1600</a>
+								<a href="#" class="products__link">BA 1601</a>
+								<a href="#" class="products__link">BA 1602</a>
+								<a href="#" class="products__link">BA 1603</a>
+								<a href="#" class="products__link">BE 1611</a>
+								<a href="#" class="products__link">BE 1612</a>
+								<a href="#" class="products__link">BE 1607</a>
+							</div>
+						</div>
+						<div class="products__item">
+							<div class="products__image">
+								<img src="assets/images/product_blood.png" />
+							</div>
+							<div class="products__title">Blood Pressure</div>
+							<div class="products__desc">Synth polaroid bitters chillwave pickled. Vegan disrupt tousled.</div>
+							<div class="products__items">
+								<a href="#" class="products__link">BPM 1400</a>
+								<a href="#" class="products__link">BPM 1401</a>
+							</div>
+						</div>
+					</div>
+					<div class="products__footer">
+						<div class="products__footer-nav">
+							<a href="#" class="products__link products__link_no-dot">App Info</a>
+							<a href="#" class="products__link products__link_no-dot">FAQ</a>
+							<a href="#" class="products__link products__link_no-dot">Imprint</a>
+						</div>
+						<div class="products__copyright">© 2016 ADE GmbH & Co.</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		</div>
 		</div>
 		<script src="assets/scripts/app.min.js"></script>

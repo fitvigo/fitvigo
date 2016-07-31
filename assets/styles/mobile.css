@@ -1,0 +1,264 @@
+@media only screen and (max-width: 600px) {
+
+	.nav__list_subnav {
+		position: static;
+		display: block;
+		box-shadow: none;
+		padding-left: 0;
+	}
+
+	.nav__list_subnav .nav__item {
+		margin: 0;
+	}
+
+	.header__nav {
+		position: absolute;
+		top: 62px;
+		left: 0;
+		right: 0;
+		background: #fff;
+	}
+
+	.nav {
+		height: 100%;
+	}
+
+	.header__nav_visible {
+		height: 100vh;
+	}
+
+	.nav__item_right {
+		position: absolute;
+		left: 0;
+		bottom: 80px;
+	}
+
+	.header__logo {
+		width: 100%;
+	}
+
+	.intro__ball {
+		margin-top: -50px;
+		left: 0;
+		width: 302px;
+		height: 302px;
+	}
+
+	.intro__ball-image {
+		width: 302px;
+		height: 302px;
+	}
+
+	.intro {
+		width: 100%;
+		margin-left: 0;
+		left: 0;
+	}
+
+	.intro h1,
+	.intro h2 {
+		font-size: 40px;
+		line-height: 48px;
+		padding: 0 20px;
+	}
+
+	.fp-viewing-intro .intro__phone {
+		top: 100px;
+	}
+
+	.intro__phone {
+		top: -250px;
+		box-shadow: none;
+	}
+
+	.intro__phone {
+		height: 50vh;
+		background-size: auto;
+		background-position: top center;
+		left: 50%;
+		margin-left: -151px;
+		transform: none;
+	}
+
+	.fp-viewing-intro .intro__phone {
+		box-shadow: inset 0 -2px 2px rgba(0,0,0,.3);
+	}
+
+	.intro__scroll-down {
+		display: none;
+	}
+
+	.fp-viewing-vigo .intro__header-2,
+	.fp-viewing-about .intro__header-2 {
+		bottom: 20%;
+	}
+
+	.fp-viewing-intro .intro__text-1,
+	.fp-viewing-vigo .intro__text-2,
+	.fp-viewing-about .intro__text-3 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		transform: none;
+	}
+  .intro__text-1 h2 {
+  	position: absolute;
+  	left: 0;
+  	right: 0;
+  	top: 20px;
+  	text-align: center;
+  }
+
+	.intro__text-1 .ce-bodytext,
+	.intro__text-2 .ce-bodytext,
+	.intro__text-3 .ce-bodytext {
+		position: absolute;
+		bottom: 10px;
+	}
+
+	.intro__text-1 p {
+		display: none;
+	}
+	.intro__text-1 p:first-child {
+		display: block;
+		padding: 0 20px;
+		text-align: center;
+	}
+
+	.track {
+		width: 100%;
+		margin-left: 0;
+		left: 0;
+	}
+
+	.track__header, .track__heading h2 {
+		font-size: 40px;
+		line-height: 48px;
+		padding: 0 20px;
+		text-align: center;
+	}
+
+	.track__heading h3 {
+		font-size: 14px;
+		padding: 0 20px;
+		text-align: center;
+	}
+
+	.track__bg {
+		width: auto;
+		height: 30vh;
+		background-size: contain;
+	}
+	.track__data {
+		left: 0;
+		right: 0;
+		top: 30%;
+	}
+	.track__product img {
+		max-width: 100%;
+		height: auto;
+	}
+	.track__desc p {
+		padding: 0 20px;
+	}
+	.habits__desc {
+		width: 100%;
+	}
+	.habits__desc h2 {
+		padding-top: 0;
+	}
+	.habits__text {
+		margin-top: 100px;
+	}
+	.habits__text h2 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.habits__text .ce-bodytext {
+		font-size: 14px;
+		padding: 0 20px;
+	}
+	.habits__habit {
+		top: 100px;
+		left: 10px;
+	}
+	.habits__habit_h2 {
+		left: 95px;
+	}
+	.habits__habit_h3 {
+		left: 180px;
+	}
+	.habits__habit_h4 {
+		left: 265px;
+	}
+	.habits__habit_h5 {
+		top: 200px;
+		left: 10px;
+	}
+	.habits__habit_h6 {
+		top: 200px;
+		left: 95px;
+	}
+	.habits__habit_h7 {
+		top: 200px;
+		left: 180px;
+	}
+	.habits__habit_h8 {
+		top: 200px;
+		left: 265px;
+	}
+	.protection__header h2 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.protection__text {
+		width: 100%;
+		padding: 0 20px;
+		font-size: 14px;
+	}
+	.share__text {
+		width: 100%;
+	}
+	.share__text h2 {
+		font-size: 40px;
+		line-height: 48px;
+		padding-top: 100px;
+	}
+	.share__icons {
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 340px;
+	}
+	.share__icon_wechat {
+		left: 108px;
+	}
+	.share__icon_whatsapp {
+		left: 228px;
+	}
+	.share__icon_fb {
+		left: 318px;
+	}
+	.index__fullpage-nav {
+    right: 5px;
+  }
+  .share__text p {
+    width: 100%;
+		padding: 0 20px;
+  }
+	.products__image {
+		float: left;
+		width: 100px;
+	}
+	.products__image img {
+		max-width: 100% !important;
+		height: auto !important;
+	}
+	.products__desc {
+		margin-left: 120px;
+	}
+	.products__items {
+		margin-left: 120px;
+	}
+}
