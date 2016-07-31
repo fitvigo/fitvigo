@@ -119,6 +119,7 @@
   },
   "dependencies": {
     "fullpage.js": "^2.8.2",
+    "jquery.scrollto": "^2.1.2",
     "slick-carousel": "^1.6.0"
   }
 }

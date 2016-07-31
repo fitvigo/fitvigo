@@ -1,9 +1,10 @@
-mixin languages()
+mixin languages(langs)
 	+b.languages&attributes(attributes)
 		+e('ul').list
-			+e('li').item._active
-				+e('a').link(href='#') DE
-			+e('li').item
-				+e('a').link(href='#') EN
-			+e('li').item
-				+e('a').link(href='#') FR
+			each lang, i in langs
+				if i === 0
+					+e('li').item._active
+						+e('a').link(href='#')= lang
+				else
+					+e('li').item
+						+e('a').link(href='#')= lang

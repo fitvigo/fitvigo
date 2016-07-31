@@ -4,6 +4,7 @@ import 'fullpage.js';
 import track from '../blocks/track/';
 import share from '../blocks/share/';
 import protection from '../blocks/protection/';
+import products from '../blocks/products/';
 import '../blocks/habits/';
 import '../blocks/header/';
 import '../blocks/nav/';
@@ -72,6 +73,7 @@ $(() => {
 			track(direction, index, scrollingSpeed);
 			share(direction, index, scrollingSpeed);
 			protection(direction, index, scrollingSpeed);
+			products(direction, index, scrollingSpeed);
 		}
 	});
 
@@ -86,11 +88,11 @@ $(() => {
 	});
 
 	$('.js-slick-text').slick({
-		'slidesToShow': 1,
-		'slidesToScroll': 1,
-		'dots': true,
-		'arrows': false,
-		'adaptiveHeight': true
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false,
+		adaptiveHeight: true
 	});
 
 });

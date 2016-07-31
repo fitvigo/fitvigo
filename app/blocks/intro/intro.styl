@@ -29,7 +29,7 @@ short-animation = ease-out .5s all
 
 	&__phone
 		position absolute
-		top 0
+		top -20%
 		left 70px
 		width 302px
 		height 628px
@@ -89,7 +89,7 @@ short-animation = ease-out .5s all
 
 		.fp-viewing-{slide2} &,
 		.fp-viewing-{slide3} &
-			bottom 30%
+			bottom 25%
 			opacity 1
 
 	&__text-2
@@ -103,18 +103,18 @@ short-animation = ease-out .5s all
 		transition short-animation
 
 		.fp-viewing-{slide2} &
-			bottom 25%
+			bottom 15%
 			opacity 1
 
 		.fp-viewing-{slide3} &
-			bottom 25%
+			bottom 15%
 			opacity 0
 
 	&__text-3
 		position absolute
 		right 0
 		left 0
-		bottom 25%
+		bottom 15%
 		line-height 23px
 		text-align center
 		opacity 0
@@ -127,7 +127,7 @@ short-animation = ease-out .5s all
 		position absolute
 		width 100vw
 		max-width 1040px
-		top 120%
+		top 130%
 		left -70px
 		margin-top -350px
 		text-align center
@@ -141,7 +141,10 @@ short-animation = ease-out .5s all
 			text-align center
 
 		+small-height()
-			top 90%
+			top 120%
+			
+		+very-small-height()
+			top 110%
 
 	&__ball-image
 		width 550px
