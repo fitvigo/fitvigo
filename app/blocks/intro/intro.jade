@@ -17,7 +17,8 @@ mixin intro()
 
 		+e.phone
 			+e.ball
-				+e('img')(src='assets/images/blue_blur.png').ball-image
+				//- +e('img')(src='assets/images/blue_blur.png').ball-image
+				+e('video').ball-image#avi-video(src='/assets/video/avi.webm' autoplay='autoplay' loop)
 
 		+e.scroll-down.js-scroll-down
 			+e.jumper

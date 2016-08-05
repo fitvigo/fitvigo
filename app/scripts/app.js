@@ -45,6 +45,12 @@ function initSlick() {
 $(() => {
 	svg4everybody();
 
+	const video = document.getElementById('avi-video');
+	video.pause();
+	setTimeout(function () {      
+		video.play();
+	}, 100);
+
 	const anchors = [
 		'intro',
 		'vigo',
