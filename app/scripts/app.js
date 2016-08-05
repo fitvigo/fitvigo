@@ -60,7 +60,7 @@ $(() => {
 
 	const mobileAt = 600;
 
-	const scrollingSpeed = 1000;
+	const scrollingSpeed = 1500;
 
 	$('#fullpage').fullpage({
 		scrollbar: false,

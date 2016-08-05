@@ -1,6 +1,3 @@
-long-animation = ease-out 1s all
-short-animation = ease-out .5s all
-
 @keyframes bounce
   0%
   	width 0
@@ -54,8 +51,8 @@ short-animation = ease-out .5s all
 
 		&_visible
 			& .share__icon
-				animation bounce .2s 1 forwards
-				animation-timing-function ease-out
+				animation bounce .3s 1 forwards
+				animation-timing-function linear
 				
 		+below($switchNavAt)
 			background-size contain

@@ -1,6 +1,26 @@
 .index
 	margin 0 auto
 	display block
+	
+	&__fake-screen-1
+		position fixed
+		left 0
+		top 0
+		right 0
+		bottom 0
+		background #fff
+		z-index 10
+		
+		.fp-viewing-{slide2} &,
+		.fp-viewing-{slide3} &,
+		.fp-viewing-{slide4} &,
+		.fp-viewing-{slide5} &,
+		.fp-viewing-{slide6} &,
+		.fp-viewing-{slide7} &,
+		.fp-viewing-{slide8} &,
+		.fp-viewing-{slide9} &,
+		.fp-viewing-{slide10} &
+			display none
 
 	&__fullpage-nav
 		position fixed
