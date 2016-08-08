@@ -5,7 +5,7 @@ import track from '../blocks/track/';
 import share from '../blocks/share/';
 import protection from '../blocks/protection/';
 import products from '../blocks/products/';
-import intro from '../blocks/intro/';
+import '../blocks/intro/';
 import '../blocks/habits/';
 import '../blocks/header/';
 import '../blocks/nav/';
