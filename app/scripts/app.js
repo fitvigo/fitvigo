@@ -78,7 +78,6 @@ $(() => {
 		scrollingSpeed,
 		anchors,
 		onLeave: (index, nextIndex, direction) => {
-			intro(direction, index, scrollingSpeed);
 			track(direction, index, scrollingSpeed);
 			share(direction, index, scrollingSpeed);
 			protection(direction, index, scrollingSpeed);
