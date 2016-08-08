@@ -8,13 +8,15 @@ mixin intro()
 
 		+e.phone
 			+e.ball
-				//- +e('img')(src='assets/images/blue_blur.png').ball-image
-				+e('video').ball-image#avi-video(autoplay loop)
-					source(src='/assets/video/avi1.webm' type='video/webm; codecs="vp8, vorbis"')
-					source(src='/assets/video/avi1.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
-				+e('video').ball-image._orange#avi-video2(autoplay loop)
-					source(src='/assets/video/avi2.webm' type='video/webm; codecs="vp8, vorbis"')
-					source(src='/assets/video/avi2.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+				+e('img')(src='assets/images/blue_blur.png').ball-image
+
+		+e.ball-large
+			+e('video').ball-video#avi-video(autoplay loop)
+				source(src='/assets/video/avi1.webm' type='video/webm; codecs="vp8, vorbis"')
+				source(src='/assets/video/avi1.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+			+e('video').ball-video._orange#avi-video2(autoplay loop)
+				source(src='/assets/video/avi2.webm' type='video/webm; codecs="vp8, vorbis"')
+				source(src='/assets/video/avi2.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
 
 		+e.header-2
 			+e('h1').header Hi, I´m Vigo — your own me

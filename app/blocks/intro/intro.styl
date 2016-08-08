@@ -39,7 +39,7 @@
 		background url(../images/phone.png) center no-repeat
 		background-size contain
 		transform translate(0, -50%)
-		// transition short-animation
+		transition short-animation
 
 		&:before
 			position absolute
@@ -50,7 +50,7 @@
 			content ''
 			background #fff
 			opacity 1
-			// transition short-animation
+			transition short-animation
 
 		.fp-viewing-{slide1} &
 			top 50%
@@ -60,7 +60,7 @@
 				opacity 0
 
 	p
-		margin-bottom 10px
+		margin-bottom 13px
 
 	h1
 		margin-bottom 20px
@@ -74,7 +74,7 @@
 		font-size 20px
 		line-height 23px
 		opacity 0
-		// transition short-animation
+		transition short-animation
 		transform translate(0, -50%)
 
 		.fp-viewing-{slide1} &
@@ -85,21 +85,21 @@
 		position absolute
 		right 0
 		left 0
-		bottom -50px
+		top 150%
 		text-align center
 		opacity 0
 		transition short-animation
 
 		.fp-viewing-{slide2} &,
 		.fp-viewing-{slide3} &
-			bottom 25%
+			top 60%
 			opacity 1
 
 	&__text-2
 		position absolute
 		right 0
 		left 0
-		bottom -50px
+		top 160%
 		font-size 20px
 		line-height 23px
 		text-align center
@@ -107,18 +107,18 @@
 		transition short-animation
 
 		.fp-viewing-{slide2} &
-			bottom 15%
+			top calc(60% + 100px)
 			opacity 1
 
 		.fp-viewing-{slide3} &
-			bottom 15%
+			top calc(60% + 100px)
 			opacity 0
 
 	&__text-3
 		position absolute
 		right 0
 		left 0
-		bottom 15%
+		top calc(60% + 100px)
 		font-size 20px
 		line-height 23px
 		text-align center
@@ -130,47 +130,20 @@
 
 	&__ball
 		position absolute
-		top 130%
-		left 70%
-		margin-top -300px
-		text-align center
+		top 140px
+		left 0
+		transform none
 		width 302px
-		// transition long-animation
-
-		.fp-viewing-{slide1} &
-			top 140px
-			left 0
-			margin-top 0
-			width 302px
-
-		+small-height()
-			top 120%
-			
-		+very-small-height()
-			top 110%
+		text-align center
 
 	&__ball-image
-		position absolute
-		left 0
-		width 450px
-		height 450px
-		// transition long-animation
-		opacity 1
+		width 150px
+		height 160px
+		opacity 0
 		transition ease-out 1s opacity
 
 		.fp-viewing-{slide1} &
-			position static
-			width 150px
-			height 160px
-			
-		.fp-viewing-{slide3} &
-			opacity 0
-			
-		&_orange
-			opacity 0
-			
-			.fp-viewing-{slide3} &
-				opacity 1
+			opacity 1
 
 	&__scroll-down
 		position absolute
@@ -201,3 +174,35 @@
 		opacity .5
 		animation jump .5s infinite
 		animation-timing-function ease-out
+
+	&__ball-large
+		position fixed
+		left 50%
+		top -100%
+		width 450px
+		height 450px
+		transform translate(-50%, -70%)
+		transition short-animation
+		
+		.fp-viewing-{slide1} &
+			top 170%
+		
+		.fp-viewing-{slide2} &,
+		.fp-viewing-{slide3} &
+			top 50%
+		
+	&__ball-video
+		position absolute
+		width 450px
+		height 450px
+		opacity 1
+		transition short-animation
+		
+		.fp-viewing-{slide3} &
+			opacity 0
+			
+		&_orange
+			opacity 0
+			
+			.fp-viewing-{slide3} &
+				opacity 1
