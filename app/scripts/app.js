@@ -5,6 +5,7 @@ import track from '../blocks/track/';
 import share from '../blocks/share/';
 import protection from '../blocks/protection/';
 import products from '../blocks/products/';
+import intro from '../blocks/intro/';
 import '../blocks/habits/';
 import '../blocks/header/';
 import '../blocks/nav/';
@@ -45,11 +46,12 @@ function initSlick() {
 $(() => {
 	svg4everybody();
 
-	const video = document.getElementById('avi-video');
-	video.pause();
+	/*const video = document.getElementById('avi-video');
+	const video2 = document.getElementById('avi-video2');
 	setTimeout(function () {      
 		video.play();
-	}, 100);
+		video2.play();
+	}, 100);*/
 
 	const anchors = [
 		'intro',
@@ -76,6 +78,7 @@ $(() => {
 		scrollingSpeed,
 		anchors,
 		onLeave: (index, nextIndex, direction) => {
+			intro(direction, index, scrollingSpeed);
 			track(direction, index, scrollingSpeed);
 			share(direction, index, scrollingSpeed);
 			protection(direction, index, scrollingSpeed);

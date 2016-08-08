@@ -6,6 +6,12 @@ mixin intro()
 			p Vegan disrupt tousled, Portland keffiyeh aesthetic food truck sriracha cornhole single-origin coffee church-key roof party 
 			p Leggings ethical McSweeney's, normcore you probably haven
 
+		+e.phone
+			+e.ball
+				//- +e('img')(src='assets/images/blue_blur.png').ball-image
+				+e('video').ball-image#avi-video(src='/assets/video/avi1.webm' autoplay loop)
+				+e('video').ball-image._orange#avi-video2(src='/assets/video/avi2.webm' autoplay loop)
+
 		+e.header-2
 			+e('h1').header Hi, I´m Vigo — your own me
 
@@ -14,11 +20,6 @@ mixin intro()
 
 		+e.text-3
 			| I´m a representation of your collected data, helping you to be more active<br>in everyday life and therefore to feel fitter and better.
-
-		+e.phone
-			+e.ball
-				//- +e('img')(src='assets/images/blue_blur.png').ball-image
-				+e('video').ball-image#avi-video(src='/assets/video/avi.webm' autoplay='autoplay' loop)
 
 		+e.scroll-down.js-scroll-down
 			+e.jumper

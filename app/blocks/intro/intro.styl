@@ -150,13 +150,27 @@
 			top 110%
 
 	&__ball-image
+		position absolute
+		left 0
 		width 450px
 		height 450px
 		// transition long-animation
+		opacity 1
+		transition ease-out 1s opacity
 
 		.fp-viewing-{slide1} &
+			position static
 			width 150px
 			height 160px
+			
+		.fp-viewing-{slide3} &
+			opacity 0
+			
+		&_orange
+			opacity 0
+			
+			.fp-viewing-{slide3} &
+				opacity 1
 
 	&__scroll-down
 		position absolute
