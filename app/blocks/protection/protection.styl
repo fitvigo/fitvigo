@@ -1,9 +1,17 @@
 .protection
+	position relative
 	display block
+	height 100%
+	
+	&__content
+		position absolute
+		left 0
+		right 0
+		top 50%
+		transform translate(0, -50%)
 
 	&__header
 		margin-bottom 40px
-		padding-top 120px
 		font-family proxima_th
 		font-size 60px
 		line-height 70px

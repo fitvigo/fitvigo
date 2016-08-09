@@ -1,45 +1,44 @@
+include ../footer/footer
+
 mixin products()
 	+b.products&attributes(attributes)
-		+e.header Products
-		+e.list
-			+e.item
-				+e.image
-					img(src='assets/images/product_activity.png')
-				+e.title Activity
-				+e.desc Synth polaroid bitters chillwave pickled. Vegan disrupt tousled.
+		+e.content
+			+e.data
+				+e.header Products
+				+e.list
+					+e.item
+						+e.image
+							img(src='assets/images/product_activity.png')
+						+e.title Activity
+						+e.desc Synth polaroid bitters chillwave pickled. Vegan disrupt tousled.
 
-				+e.items
-					+e('a').link(href='#') AM 1500
+						+e.items
+							+e('a').link(href='#') AM 1500
 
-			+e.item
-				+e.image
-					img(src='assets/images/product_scales.png')
-				+e.title Scales
-				+e.desc More than 10 types of scales,  which can do anything.
+					+e.item
+						+e.image
+							img(src='assets/images/product_scales.png')
+						+e.title Scales
+						+e.desc More than 10 types of scales,  which can do anything.
 
-				+e.items
-					+e('a').link(href='#') BA 1600
-					+e('a').link(href='#') BA 1601
-					+e('a').link(href='#') BA 1602
-					+e('a').link(href='#') BA 1603
-					+e('a').link(href='#') BE 1611
-					+e('a').link(href='#') BE 1612
-					+e('a').link(href='#') BE 1607
+						+e.items
+							+e('a').link(href='#') BA 1600
+							+e('a').link(href='#') BA 1601
+							+e('a').link(href='#') BA 1602
+							+e('a').link(href='#') BA 1603
+							+e('a').link(href='#') BE 1611
+							+e('a').link(href='#') BE 1612
+							+e('a').link(href='#') BE 1607
 
-			+e.item
-				+e.image
-					img(src='assets/images/product_blood.png')
-				+e.title Blood Pressure
-				+e.desc Synth polaroid bitters chillwave pickled. Vegan disrupt tousled.
+					+e.item
+						+e.image
+							img(src='assets/images/product_blood.png')
+						+e.title Blood Pressure
+						+e.desc Synth polaroid bitters chillwave pickled. Vegan disrupt tousled.
 
-				+e.items
-					+e('a').link(href='#') BPM 1400
-					+e('a').link(href='#') BPM 1401
+						+e.items
+							+e('a').link(href='#') BPM 1400
+							+e('a').link(href='#') BPM 1401
 
 		+e.footer
-			+e.footer-nav
-				+e('a').link._no-dot(href='#') App Info
-				+e('a').link._no-dot(href='#') FAQ
-				+e('a').link._no-dot(href='#') Imprint
-
-			+e.copyright © 2016 ADE GmbH & Co.
+			+footer

@@ -14,10 +14,21 @@
 		
 	+below($switchNavAt)
 		position static
+		
+	&__content
+		position relative
+		height calc(100% - 320px)
+		min-height 550px
+
+	&__data
+		position absolute
+		top 50%
+		left 0
+		right 0
+		transform translate(0, -50%)
 
 	&__header
 		margin-bottom 30px
-		padding-top 90px
 		font-family proxima_th
 		header()
 		text-align center
@@ -86,10 +97,8 @@
 			display none
 
 	&__footer
-		position static
+		height 320px
 		text-align center
-		margin-top 30px
-		margin-bottom 30px
 
 	&__copyright
 		font-size 14px
