@@ -1,12 +1,28 @@
 @keyframes jump
   0%
-  	top 0
+  	top 10px
 
   50%
-  	top 20px
+  	top 30px
 
   100%
-  	top 0
+  	top 10px
+  	
+ @keyframes jump-blur
+  0%
+  	background-position center -15px
+
+  50%
+  	background-position center -5px
+  	
+  55%
+  	background-position center 0px
+
+  95%
+  	background-position center -5px
+  	
+  100%
+  	background-position center -15px
 
 .intro
 	position fixed
@@ -29,6 +45,15 @@
 	.fp-viewing-{slide10} &
 		top -100%
 		bottom 100%
+		
+	&__content
+		opacity 0
+		transition short-animation
+		transition-delay .5s
+		
+		.fp-viewing-{slide2} &,
+		.fp-viewing-{slide3} &
+			opacity 1
 
 	&__phone
 		position absolute
@@ -85,15 +110,16 @@
 		position absolute
 		right 0
 		left 0
-		top 150%
+		top -100%
 		text-align center
-		opacity 0
-		transition short-animation
+		transition long-animation
 
+		.fp-viewing-{slide1} &
+			top 170%
+		
 		.fp-viewing-{slide2} &,
 		.fp-viewing-{slide3} &
 			top 60%
-			opacity 1
 
 	&__text-2
 		position absolute
@@ -105,7 +131,7 @@
 		text-align center
 		opacity 0
 		display none
-		transition short-animation
+		transition long-animation
 		
 		.fp-viewing-{slide1} &,
 		.fp-viewing-{slide2} &,
@@ -130,7 +156,17 @@
 		line-height 23px
 		text-align center
 		opacity 0
-		transition short-animation
+		display none
+		transition long-animation
+		
+		.fp-viewing-{slide4} &
+			top -100%
+		
+		.fp-viewing-{slide1} &,
+		.fp-viewing-{slide2} &,
+		.fp-viewing-{slide3} &,
+		.fp-viewing-{slide4} &
+			display block
 
 		.fp-viewing-{slide3} &
 			opacity 1
@@ -156,13 +192,18 @@
 		position absolute
 		left 50%
 		bottom 150px
-		padding-top 48px
+		padding-top 58px
 		width 100px
 		font-size 16px
 		text-align center
 		cursor pointer
 		color #7e9fc0
 		opacity 0
+		background-image url(../images/scroll_blur.png)
+		background-repeat no-repeat
+		background-position center -20px
+		animation jump-blur .8s infinite
+		animation-timing-function ease-out
 		transform translate(0, -50%)
 		transition short-animation
 
@@ -172,14 +213,14 @@
 
 	&__jumper
 		position absolute
-		top 0
+		top 10px
 		left 38px
 		width 24px
 		height 24px
 		background-color #9ac9ff
 		border-radius 100%
 		opacity .5
-		animation jump .5s infinite
+		animation jump .8s infinite
 		animation-timing-function ease-out
 
 	&__ball-large
@@ -190,7 +231,7 @@
 		height 450px
 		opacity 0
 		transform translate(-50%, -70%)
-		transition short-animation
+		transition long-animation
 		
 		.fp-viewing-{slide1} &
 			top 170%

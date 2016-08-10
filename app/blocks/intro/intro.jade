@@ -10,22 +10,23 @@ mixin intro()
 			+e.ball
 				+e('img')(src='assets/images/blue_blur.png').ball-image
 
-		+e.ball-large
-			+e('video').ball-video#avi-video(autoplay loop)
-				source(src='/assets/video/avi1.webm' type='video/webm; codecs="vp8, vorbis"')
-				source(src='/assets/video/avi1.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
-			+e('video').ball-video._orange#avi-video2(autoplay loop)
-				source(src='/assets/video/avi2.webm' type='video/webm; codecs="vp8, vorbis"')
-				source(src='/assets/video/avi2.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+		+e.content
+			+e.ball-large
+				+e('video').ball-video#avi-video(autoplay loop)
+					source(src='/assets/video/avi1.webm' type='video/webm; codecs="vp8, vorbis"')
+					source(src='/assets/video/avi1.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+				+e('video').ball-video._orange#avi-video2(autoplay loop)
+					source(src='/assets/video/avi2.webm' type='video/webm; codecs="vp8, vorbis"')
+					source(src='/assets/video/avi2.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
 
-		+e.header-2
-			+e('h1').header Hi, I´m Vigo — your own me
+			+e.header-2
+				+e('h1').header Hi, I´m Vigo — your own me
 
-		+e.text-2
-			| a personalized graphic companion, giving you a body-status-check with<br>one glimpse
+			+e.text-2
+				| a personalized graphic companion, giving you a body-status-check with<br>one glimpse
 
-		+e.text-3
-			| I´m a representation of your collected data, helping you to be more active<br>in everyday life and therefore to feel fitter and better.
+			+e.text-3
+				| I´m a representation of your collected data, helping you to be more active<br>in everyday life and therefore to feel fitter and better.
 
 		+e.scroll-down.js-scroll-down
 			+e.jumper

@@ -13,12 +13,17 @@
 		overflow auto
 		
 	+below($switchNavAt)
+		padding-top 50px
 		position static
 		
 	&__content
 		position relative
 		height calc(100% - 320px)
 		min-height 550px
+		
+		+below($switchNavAt)
+			height auto
+			min-height auto
 
 	&__data
 		position absolute
@@ -26,6 +31,10 @@
 		left 0
 		right 0
 		transform translate(0, -50%)
+		
+		+below($switchNavAt)
+			position static
+			transform none
 
 	&__header
 		margin-bottom 30px
@@ -60,6 +69,10 @@
 		font-size 32px
 		line-height 39px
 		text-align left
+		
+		+below($switchNavAt)
+			text-align center
+			color #7e9fc0
 
 	&__desc
 		margin-bottom 10px
