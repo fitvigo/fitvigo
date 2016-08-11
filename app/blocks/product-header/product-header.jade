@@ -5,7 +5,8 @@ mixin product-header(data)
 	- var image = data.image || ''
 	+b.product-header&attributes(attributes)
 		+e.item
-			+e.header!= title
+			+e.header.js-product-header
+				+e.inline-header.js-inline-header!= title
 			+e.subheader!= subheader
 			+e.text!= text
 		+e.image

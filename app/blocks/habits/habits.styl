@@ -61,14 +61,17 @@
 		width 864px
 		
 		+below($switchNavAt)
-			width 270px
+			z-index 15
+			top auto
+			bottom 150px
+			width 300px
 
 	&__icon
 		width 80px
 		transition ease-out .4s all
 		
 		+below($switchNavAt)
-			width 60px
+			width 50px
 
 	&__text
 		position absolute
@@ -98,17 +101,17 @@
 		
 		+below($switchNavAt)
 			top -30px
-			left -30px
+			left 0
 
 		&_h2
 			left 96px
 			+below($switchNavAt)
-				left 40px
+				left 60px
 
 		&_h3
 			left 192px
 			+below($switchNavAt)
-				left 110px
+				left 120px
 
 		&_h4
 			left 288px
@@ -118,24 +121,24 @@
 		&_h5
 			left 384px
 			+below($switchNavAt)
-				left 250px
+				left 240px
 
 		&_h6
 			left 480px
 			+below($switchNavAt)
-				left 0
+				left 30px
 				top 40px
 
 		&_h7
 			left 576px
 			+below($switchNavAt)
-				left 70px
+				left 90px
 				top 40px
 
 		&_h8
 			left 672px
 			+below($switchNavAt)
-				left 140px
+				left 150px
 				top 40px
 				
 		&_h9
@@ -165,6 +168,10 @@
 		left 0
 		right 0
 		text-align center
+		
+		+below($switchNavAt)
+			top auto
+			bottom 250px
 
 	&__habit-title
 		margin-bottom 20px

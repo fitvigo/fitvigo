@@ -9,6 +9,7 @@ import '../blocks/intro/';
 import '../blocks/habits/';
 import '../blocks/header/';
 import '../blocks/nav/';
+import '../blocks/product-header/';
 import 'slick-carousel';
 
 function getDevice() {
