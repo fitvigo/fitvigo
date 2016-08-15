@@ -65,17 +65,13 @@
 			line-height normal
 
 	&__text
-		margin-bottom 17px
 		font-size 20px
 
-		+below($mobile)
-			margin-bottom 15px
-
 	&__users
-		padding-bottom 35px
+		padding 20px 0
 
 		+below($mobile)
-			padding-bottom 28px
+			padding-bottom 20px
 
 	&__user
 		padding 6px 16px
@@ -106,6 +102,7 @@
 
 		+below($mobile)
 			margin 0 auto
+			width auto
 			display block
 
 		&_disabled
@@ -122,20 +119,18 @@
 		height 16px
 
 	&__list
+		margin-top 15px
 		margin-left 18px
 		padding-left 0
 		list-style disc
 		font-size 18px
-
-		+below($tablet)
-			margin-bottom 15px
 
 	&__item
 		padding-bottom 10px
 		color #d8d8d8
 
 		&:last-child
-			padding-bottom 5px
+			padding-bottom 0
 
 		br
 			+below($tablet)

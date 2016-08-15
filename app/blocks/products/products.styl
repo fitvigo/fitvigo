@@ -3,6 +3,7 @@
 	position fixed
 	top 100%
 	transition ease-out 1.5s all
+	opacity 0
 	left 0
 	right 0
 	
@@ -11,8 +12,10 @@
 		top 70px
 		bottom 0
 		overflow auto
+		opacity 1
 		
 	+below($switchNavAt)
+		opacity 1
 		padding-top 50px
 		position static
 		

@@ -1,6 +1,5 @@
 .product-features
 	padding-top 40px
-	padding-bottom 135px
 	display block
 
 	+below($tablet)
@@ -16,7 +15,7 @@
 		+below($tablet)
 			margin-top 0
 			margin-bottom 0
-			padding-bottom 73px
+			padding-bottom 0
 			width 100%
 
 		&_cols-3
@@ -96,11 +95,10 @@
 				display inline-block
 
 	&__text
-		margin-top 32px
 		line-height 24px
 
 		+below($tablet)
-			margin-top 10px
+			margin 10px 0
 			padding 0 20px
 			font-size 18px
 
@@ -111,10 +109,11 @@
 		line-height 15px
 
 	&__item-header
-		padding-bottom 32px
+		padding-bottom 20px
+		line-height 50px
 
 		+below($tablet)
-			padding-bottom 22px
+			padding-bottom 0
 			min-height 80px
 
 	&__image

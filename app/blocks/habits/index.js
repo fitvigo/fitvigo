@@ -6,7 +6,9 @@ class Habits {
 			habit: '.habits__habit',
 			text: '.habits__text',
 			desc: '.habits__habit-desc',
-			whiteScreen: '.habits__white-screen'
+			whiteScreen: '.habits__white-screen',
+			mobileDesc: '.mobile-index__habits .habits__desc',
+			mobileDescs: '.mobile-index__habits .habits__desc > div'
 		};
 
 		this.classes = {
@@ -19,6 +21,24 @@ class Habits {
 
 		$(this.selectors.habit).on('click', this.selectHabit.bind(this));
 		$(document.body).click(this.resetHabit.bind(this));
+		this.setMobileDescHeight();
+		$(window).on('resize', this.setMobileDescHeight.bind(this));
+	}
+
+	setMobileDescHeight() {
+		const $descs = $(this.selectors.mobileDescs);
+		let height = 0;
+		$descs.each(function() {
+			const $this = $(this);
+			$this.css({display: 'block'});
+			const descHeight = $this.height();
+			$this.removeAttr('style');
+			if (descHeight > height) {
+				height = descHeight;
+			}
+		});
+
+		$(this.selectors.mobileDesc).css({ height });
 	}
 
 	resetHabit() {

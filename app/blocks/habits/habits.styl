@@ -3,6 +3,9 @@
 	background-image linear-gradient(180deg, rgba(255, 255, 255, .98) 0, rgba(255, 255, 255, .25) 100%), url('../images/habits.png')
 	background-position 50% 100%
 	background-size cover
+	
+	+below($switchNavAt)
+		height auto
 
 	&__wrapper
 		position relative
@@ -61,9 +64,13 @@
 		width 864px
 		
 		+below($switchNavAt)
+			margin 10px auto 0
+			height 200px
+			position relative
 			z-index 15
-			top auto
-			bottom 150px
+			top 0
+			left 0
+			transform none
 			width 300px
 
 	&__icon
@@ -170,8 +177,9 @@
 		text-align center
 		
 		+below($switchNavAt)
+			height 150px
+			position relative
 			top auto
-			bottom 250px
 
 	&__habit-title
 		margin-bottom 20px
