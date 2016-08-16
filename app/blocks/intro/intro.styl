@@ -172,21 +172,36 @@
 			opacity 1
 
 	&__ball
-		position absolute
-		top 140px
-		left 0
-		transform none
+		position fixed
+		top 55%
+		left 221px
 		width 302px
+		height 302px
+		transform translate(-50%, -70%)
 		text-align center
+		transition ease-out 1s all
+		
+		.fp-viewing-{slide2} &
+		.fp-viewing-{slide3} &
+			width 500px
+			height 500px
+			left 50%
+			top 50%
 
 	&__ball-image
 		width 150px
 		height 160px
 		opacity 0
-		transition ease-out 1s opacity
+		transition ease-out 1s all
 
 		.fp-viewing-{slide1} &
+		.fp-viewing-{slide2} &
 			opacity 1
+			
+		.fp-viewing-{slide2} &
+		.fp-viewing-{slide3} &
+			width 500px
+			height 500px
 
 	&__scroll-down
 		position absolute
